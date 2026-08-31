@@ -33,26 +33,38 @@ turn = 0
 current_time = datetime.strptime("8:00 AM", "%I:%M %p")
 simulation_ended = False
 
+probability_hour = [0.15,   # 8:00 - 9:00
+                    0.175,  # 9:00 - 10:00
+                    0.125,  # 10:00 - 11:00
+                    0.075,  # 11:00 - 12:00
+                    0.025,  # 12:00 - 1:00
+                    0.025,  # 1:00 - 2:00
+                    0.025,  # 2:00 - 3:00
+                    0.075,  # 3:00 - 4:00
+                    0.15,   # 4:00 - 5:00
+                    0.175]  # 5:00 - 6:00
+
 class VoterAgent:
 
-   def __init__(self, voter_id):
-       self.voter_id = voter_id
-       self.arrival_time = 0
-       self.check_time = 0
-       self.voting_time = 0
-       self.exit_time = 0
+def __init__(self, voter_id):
+        self.voter_id = voter_id
+        self.arrival_time = 0
+        self.check_time = 0
+        self.voting_time = 0
+        self.exit_time = 0
 
 while simulation_ended == False:
 
-   formatted_time = current_time.strftime("%I:%M %p").lstrip("0")
-   print(f"Turn {turn}: {formatted_time}")
+    formatted_time = current_time.strftime("%I:%M %p").lstrip("0")
+    print(f"Turn {turn}: {formatted_time}")
 
-   current_time += timedelta(minutes=1)
-   turn += 1
+    current_time += timedelta(minutes=1)
+    turn += 1
 
-   if turn >= total_turns:
-       simulation_ended = True
-       print("Simulation ended.")
+    if turn >= total_turns:
+        while
+        simulation_ended = True
+        print("Simulation ended.")
 
 
 # ---------------------------------------
