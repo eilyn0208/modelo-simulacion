@@ -18,22 +18,41 @@
 # heapq is used to implement a priority queue that manages
 # all simulation events in chronological order.
 import heapq
-
 import random
+
+from datetime import datetime, timedelta
+import time
 
 # ---------------------------------------
 # VOTER AGENT
 # ---------------------------------------
 # In the object definition, you can see the time attributes associated with each stage.
 
+total_turns = 600 # unidades de tiempo (10 horas / 60 minutos)
+turn = 0
+current_time = datetime.strptime("8:00 AM", "%I:%M %p")
+simulation_ended = False
+
 class VoterAgent:
 
-    def __init__(self, voter_id):
-        self.voter_id = voter_id
-        self.arrival_time = 0
-        self.check_time = 0
-        self.voting_time = 0
-        self.exit_time = 0
+   def __init__(self, voter_id):
+       self.voter_id = voter_id
+       self.arrival_time = 0
+       self.check_time = 0
+       self.voting_time = 0
+       self.exit_time = 0
+
+while simulation_ended == False:
+
+   formatted_time = current_time.strftime("%I:%M %p").lstrip("0")
+   print(f"Turn {turn}: {formatted_time}")
+
+   current_time += timedelta(minutes=1)
+   turn += 1
+
+   if turn >= total_turns:
+       simulation_ended = True
+       print("Simulation ended.")
 
 
 # ---------------------------------------
