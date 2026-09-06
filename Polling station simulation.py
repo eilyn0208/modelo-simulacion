@@ -200,3 +200,28 @@ print(
     f"Votantes con INE válida: {valid_ines}"
     f" ({(valid_ines/total_spawned_count*100) if total_spawned_count else 0:.1f}%)"
 )
+
+# Inicializar conteo en 0 para cada partido
+conteo_votos = {partido: 0 for partido in PARTIDOS}
+
+# Contar únicamente los votos de agentes cuya credencial fue válida
+for agent in voters_spawned:
+    if agent.ine_valida:
+        conteo_votos[agent.partido] += 1
+
+print("\n" + "=" * 80)
+print("                     RESULTADOS DE LA ELECCIÓN")
+print("=" * 80)
+
+# Ordenar los resultados de mayor a menor número de votos
+votos_ordenados = sorted(conteo_votos.items(), key=lambda item: item[1], reverse=True)
+
+for partido, votos in votos_ordenados:
+    pct = (votos / valid_ines * 100) if valid_ines > 0 else 0.0
+    barra = "█" * int(pct // 2)  # Barra visual proporcional (máx 50 caracteres)
+    print(f"{partido:<22} | {votos:3d} votos ({pct:5.2f}%) | {barra}")
+
+print("-" * 80)
+print(f"Total de votos emitidos (INE válida): {valid_ines}")
+votos_descartados = total_spawned_count - valid_ines
+print(f"Votos no emitidos (INE rechazada)  : {votos_descartados}")
