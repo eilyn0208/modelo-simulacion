@@ -1,0 +1,1156 @@
+[Beat 0001 |  8:00:30 AM] -> SPAWN: ID 1   entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0002 |  8:01:00 AM] -> SPAWN: ID 2   entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0003 |  8:01:30 AM] -> CONFIRMACIÓN OK: ID 1   verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0003 |  8:01:30 AM] -> SPAWN: ID 3   entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0004 |  8:02:00 AM] -> CONFIRMACIÓN OK: ID 2   verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0005 |  8:02:30 AM] -> RECHAZADO: ID 3   INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0006 |  8:03:00 AM] -> SPAWN: ID 4   entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0008 |  8:04:00 AM] -> CONFIRMACIÓN OK: ID 4   verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0009 |  8:04:30 AM] -> FIN VOTO: ID 1   terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0010 |  8:05:00 AM] -> FIN VOTO: ID 2   terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0011 |  8:05:30 AM] -> SPAWN: ID 5   entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0013 |  8:06:30 AM] -> CONFIRMACIÓN OK: ID 5   verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0016 |  8:08:00 AM] -> SPAWN: ID 6   entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0017 |  8:08:30 AM] -> FIN VOTO: ID 4   terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0018 |  8:09:00 AM] -> CONFIRMACIÓN OK: ID 6   verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0018 |  8:09:00 AM] -> SPAWN: ID 7   entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0019 |  8:09:30 AM] -> SPAWN: ID 8   entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0020 |  8:10:00 AM] -> FIN VOTO: ID 5   terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0020 |  8:10:00 AM] -> CONFIRMACIÓN OK: ID 7   verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0021 |  8:10:30 AM] -> CONFIRMACIÓN OK: ID 8   verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0023 |  8:11:30 AM] -> SPAWN: ID 9   entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0024 |  8:12:00 AM] -> FIN VOTO: ID 6   terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0025 |  8:12:30 AM] -> CONFIRMACIÓN OK: ID 9   verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0026 |  8:13:00 AM] -> SPAWN: ID 10  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0028 |  8:14:00 AM] -> FIN VOTO: ID 7   terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0028 |  8:14:00 AM] -> CONFIRMACIÓN OK: ID 10  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0030 |  8:15:00 AM] -> FIN VOTO: ID 8   terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0030 |  8:15:00 AM] -> SPAWN: ID 11  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0031 |  8:15:30 AM] -> SPAWN: ID 12  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0032 |  8:16:00 AM] -> CONFIRMACIÓN OK: ID 11  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0033 |  8:16:30 AM] -> FIN VOTO: ID 9   terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0033 |  8:16:30 AM] -> CONFIRMACIÓN OK: ID 12  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0033 |  8:16:30 AM] -> SPAWN: ID 13  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0035 |  8:17:30 AM] -> FIN VOTO: ID 10  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0035 |  8:17:30 AM] -> CONFIRMACIÓN OK: ID 13  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0036 |  8:18:00 AM] -> FIN VOTO: ID 11  terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0036 |  8:18:00 AM] -> SPAWN: ID 14  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0038 |  8:19:00 AM] -> FIN VOTO: ID 12  terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0038 |  8:19:00 AM] -> CONFIRMACIÓN OK: ID 14  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0039 |  8:19:30 AM] -> SPAWN: ID 15  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0040 |  8:20:00 AM] -> SPAWN: ID 16  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0041 |  8:20:30 AM] -> CONFIRMACIÓN OK: ID 15  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0041 |  8:20:30 AM] -> SPAWN: ID 17  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0042 |  8:21:00 AM] -> CONFIRMACIÓN OK: ID 16  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0043 |  8:21:30 AM] -> FIN VOTO: ID 14  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0043 |  8:21:30 AM] -> CONFIRMACIÓN OK: ID 17  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0043 |  8:21:30 AM] -> SPAWN: ID 18  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0044 |  8:22:00 AM] -> FIN VOTO: ID 13  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0044 |  8:22:00 AM] -> SPAWN: ID 19  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0045 |  8:22:30 AM] -> CONFIRMACIÓN OK: ID 18  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0046 |  8:23:00 AM] -> CONFIRMACIÓN OK: ID 19  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0047 |  8:23:30 AM] -> SPAWN: ID 20  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0048 |  8:24:00 AM] -> FIN VOTO: ID 16  terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 0048 |  8:24:00 AM] -> SPAWN: ID 21  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0049 |  8:24:30 AM] -> RECHAZADO: ID 20  INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0049 |  8:24:30 AM] -> SPAWN: ID 22  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0050 |  8:25:00 AM] -> FIN VOTO: ID 15  terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0050 |  8:25:00 AM] -> CONFIRMACIÓN OK: ID 21  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0050 |  8:25:00 AM] -> SPAWN: ID 23  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0051 |  8:25:30 AM] -> CONFIRMACIÓN OK: ID 22  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0051 |  8:25:30 AM] -> SPAWN: ID 24  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0052 |  8:26:00 AM] -> FIN VOTO: ID 17  terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0052 |  8:26:00 AM] -> CONFIRMACIÓN OK: ID 23  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0053 |  8:26:30 AM] -> FIN VOTO: ID 18  terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0053 |  8:26:30 AM] -> CONFIRMACIÓN OK: ID 24  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0053 |  8:26:30 AM] -> SPAWN: ID 25  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0054 |  8:27:00 AM] -> SPAWN: ID 26  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0055 |  8:27:30 AM] -> FIN VOTO: ID 19  terminó de votar en Casilla 5 (Voto emitido por PRI)
+[Beat 0055 |  8:27:30 AM] -> CONFIRMACIÓN OK: ID 25  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0055 |  8:27:30 AM] -> SPAWN: ID 27  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0056 |  8:28:00 AM] -> FIN VOTO: ID 23  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0056 |  8:28:00 AM] -> CONFIRMACIÓN OK: ID 26  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0057 |  8:28:30 AM] -> FIN VOTO: ID 22  terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0057 |  8:28:30 AM] -> CONFIRMACIÓN OK: ID 27  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0058 |  8:29:00 AM] -> FIN VOTO: ID 24  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0058 |  8:29:00 AM] -> FIN VOTO: ID 21  terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0059 |  8:29:30 AM] -> SPAWN: ID 28  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0061 |  8:30:30 AM] -> CONFIRMACIÓN OK: ID 28  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0062 |  8:31:00 AM] -> FIN VOTO: ID 26  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0063 |  8:31:30 AM] -> FIN VOTO: ID 25  terminó de votar en Casilla 5 (Voto emitido por Otros)
+[Beat 0063 |  8:31:30 AM] -> SPAWN: ID 29  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0064 |  8:32:00 AM] -> FIN VOTO: ID 27  terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 0064 |  8:32:00 AM] -> SPAWN: ID 30  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0065 |  8:32:30 AM] -> FIN VOTO: ID 28  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0065 |  8:32:30 AM] -> CONFIRMACIÓN OK: ID 29  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0065 |  8:32:30 AM] -> SPAWN: ID 31  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0066 |  8:33:00 AM] -> CONFIRMACIÓN OK: ID 30  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0066 |  8:33:00 AM] -> SPAWN: ID 32  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0067 |  8:33:30 AM] -> CONFIRMACIÓN OK: ID 31  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0067 |  8:33:30 AM] -> SPAWN: ID 33  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0068 |  8:34:00 AM] -> CONFIRMACIÓN OK: ID 32  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0069 |  8:34:30 AM] -> CONFIRMACIÓN OK: ID 33  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0070 |  8:35:00 AM] -> FIN VOTO: ID 29  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0070 |  8:35:00 AM] -> SPAWN: ID 34  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0072 |  8:36:00 AM] -> FIN VOTO: ID 30  terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0072 |  8:36:00 AM] -> CONFIRMACIÓN OK: ID 34  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0073 |  8:36:30 AM] -> FIN VOTO: ID 31  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0073 |  8:36:30 AM] -> FIN VOTO: ID 32  terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 0074 |  8:37:00 AM] -> SPAWN: ID 35  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0075 |  8:37:30 AM] -> SPAWN: ID 36  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0076 |  8:38:00 AM] -> FIN VOTO: ID 33  terminó de votar en Casilla 5 (Voto emitido por PRI)
+[Beat 0076 |  8:38:00 AM] -> CONFIRMACIÓN OK: ID 35  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0076 |  8:38:00 AM] -> SPAWN: ID 37  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0077 |  8:38:30 AM] -> CONFIRMACIÓN OK: ID 36  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0077 |  8:38:30 AM] -> SPAWN: ID 38  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0078 |  8:39:00 AM] -> FIN VOTO: ID 34  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0078 |  8:39:00 AM] -> CONFIRMACIÓN OK: ID 37  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0079 |  8:39:30 AM] -> CONFIRMACIÓN OK: ID 38  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0080 |  8:40:00 AM] -> SPAWN: ID 39  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0082 |  8:41:00 AM] -> FIN VOTO: ID 37  terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0082 |  8:41:00 AM] -> FIN VOTO: ID 35  terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0082 |  8:41:00 AM] -> CONFIRMACIÓN OK: ID 39  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0082 |  8:41:00 AM] -> SPAWN: ID 40  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0083 |  8:41:30 AM] -> SPAWN: ID 41  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0084 |  8:42:00 AM] -> CONFIRMACIÓN OK: ID 40  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0085 |  8:42:30 AM] -> RECHAZADO: ID 41  INE inválida en Recipiente 2 -> Se retira sin votar
+[Beat 0086 |  8:43:00 AM] -> SPAWN: ID 42  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0087 |  8:43:30 AM] -> FIN VOTO: ID 39  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0087 |  8:43:30 AM] -> FIN VOTO: ID 36  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0087 |  8:43:30 AM] -> SPAWN: ID 43  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0088 |  8:44:00 AM] -> FIN VOTO: ID 38  terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0088 |  8:44:00 AM] -> CONFIRMACIÓN OK: ID 42  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0088 |  8:44:00 AM] -> SPAWN: ID 44  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0089 |  8:44:30 AM] -> CONFIRMACIÓN OK: ID 43  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0090 |  8:45:00 AM] -> FIN VOTO: ID 40  terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0090 |  8:45:00 AM] -> CONFIRMACIÓN OK: ID 44  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0090 |  8:45:00 AM] -> SPAWN: ID 45  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0092 |  8:46:00 AM] -> CONFIRMACIÓN OK: ID 45  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0092 |  8:46:00 AM] -> SPAWN: ID 46  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0093 |  8:46:30 AM] -> FIN VOTO: ID 42  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0093 |  8:46:30 AM] -> SPAWN: ID 47  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0094 |  8:47:00 AM] -> CONFIRMACIÓN OK: ID 46  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0094 |  8:47:00 AM] -> SPAWN: ID 48  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0095 |  8:47:30 AM] -> FIN VOTO: ID 44  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0095 |  8:47:30 AM] -> CONFIRMACIÓN OK: ID 47  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0095 |  8:47:30 AM] -> SPAWN: ID 49  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0096 |  8:48:00 AM] -> CONFIRMACIÓN OK: ID 48  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0097 |  8:48:30 AM] -> CONFIRMACIÓN OK: ID 49  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0098 |  8:49:00 AM] -> FIN VOTO: ID 43  terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0099 |  8:49:30 AM] -> FIN VOTO: ID 48  terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 0100 |  8:50:00 AM] -> FIN VOTO: ID 46  terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0100 |  8:50:00 AM] -> FIN VOTO: ID 45  terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0100 |  8:50:00 AM] -> SPAWN: ID 50  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0101 |  8:50:30 AM] -> SPAWN: ID 51  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0102 |  8:51:00 AM] -> FIN VOTO: ID 47  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0102 |  8:51:00 AM] -> RECHAZADO: ID 50  INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0102 |  8:51:00 AM] -> SPAWN: ID 52  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0103 |  8:51:30 AM] -> CONFIRMACIÓN OK: ID 51  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0104 |  8:52:00 AM] -> FIN VOTO: ID 49  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0104 |  8:52:00 AM] -> CONFIRMACIÓN OK: ID 52  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0104 |  8:52:00 AM] -> SPAWN: ID 53  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0106 |  8:53:00 AM] -> CONFIRMACIÓN OK: ID 53  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0107 |  8:53:30 AM] -> SPAWN: ID 54  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0109 |  8:54:30 AM] -> FIN VOTO: ID 52  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0109 |  8:54:30 AM] -> FIN VOTO: ID 53  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0109 |  8:54:30 AM] -> CONFIRMACIÓN OK: ID 54  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0109 |  8:54:30 AM] -> SPAWN: ID 55  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0111 |  8:55:30 AM] -> FIN VOTO: ID 51  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0111 |  8:55:30 AM] -> CONFIRMACIÓN OK: ID 55  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0112 |  8:56:00 AM] -> FIN VOTO: ID 54  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0112 |  8:56:00 AM] -> SPAWN: ID 56  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0114 |  8:57:00 AM] -> CONFIRMACIÓN OK: ID 56  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0116 |  8:58:00 AM] -> SPAWN: ID 57  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0118 |  8:59:00 AM] -> FIN VOTO: ID 55  terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0118 |  8:59:00 AM] -> CONFIRMACIÓN OK: ID 57  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0119 |  8:59:30 AM] -> FIN VOTO: ID 56  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0119 |  8:59:30 AM] -> SPAWN: ID 58  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0121 |  9:00:30 AM] -> CONFIRMACIÓN OK: ID 58  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0121 |  9:00:30 AM] -> SPAWN: ID 59  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0123 |  9:01:30 AM] -> FIN VOTO: ID 57  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0123 |  9:01:30 AM] -> CONFIRMACIÓN OK: ID 59  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0123 |  9:01:30 AM] -> SPAWN: ID 60  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0125 |  9:02:30 AM] -> RECHAZADO: ID 60  INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0125 |  9:02:30 AM] -> SPAWN: ID 61  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0127 |  9:03:30 AM] -> FIN VOTO: ID 59  terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0127 |  9:03:30 AM] -> CONFIRMACIÓN OK: ID 61  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0127 |  9:03:30 AM] -> SPAWN: ID 62  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0129 |  9:04:30 AM] -> FIN VOTO: ID 58  terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0129 |  9:04:30 AM] -> CONFIRMACIÓN OK: ID 62  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0129 |  9:04:30 AM] -> SPAWN: ID 63  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0131 |  9:05:30 AM] -> CONFIRMACIÓN OK: ID 63  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0131 |  9:05:30 AM] -> SPAWN: ID 64  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0132 |  9:06:00 AM] -> SPAWN: ID 65  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0133 |  9:06:30 AM] -> CONFIRMACIÓN OK: ID 64  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0133 |  9:06:30 AM] -> SPAWN: ID 66  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0134 |  9:07:00 AM] -> FIN VOTO: ID 61  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0134 |  9:07:00 AM] -> CONFIRMACIÓN OK: ID 65  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0134 |  9:07:00 AM] -> SPAWN: ID 67  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0135 |  9:07:30 AM] -> CONFIRMACIÓN OK: ID 66  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0135 |  9:07:30 AM] -> SPAWN: ID 68  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0136 |  9:08:00 AM] -> CONFIRMACIÓN OK: ID 67  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0136 |  9:08:00 AM] -> SPAWN: ID 69  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0137 |  9:08:30 AM] -> FIN VOTO: ID 62  terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0137 |  9:08:30 AM] -> CONFIRMACIÓN OK: ID 68  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0138 |  9:09:00 AM] -> FIN VOTO: ID 63  terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0138 |  9:09:00 AM] -> CONFIRMACIÓN OK: ID 69  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0138 |  9:09:00 AM] -> SPAWN: ID 70  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0139 |  9:09:30 AM] -> SPAWN: ID 71  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0140 |  9:10:00 AM] -> FIN VOTO: ID 65  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0140 |  9:10:00 AM] -> FIN VOTO: ID 64  terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 0140 |  9:10:00 AM] -> FIN VOTO: ID 66  terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0140 |  9:10:00 AM] -> CONFIRMACIÓN OK: ID 70  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0140 |  9:10:00 AM] -> SPAWN: ID 72  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0141 |  9:10:30 AM] -> CONFIRMACIÓN OK: ID 71  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0141 |  9:10:30 AM] -> SPAWN: ID 73  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0142 |  9:11:00 AM] -> CONFIRMACIÓN OK: ID 72  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0143 |  9:11:30 AM] -> FIN VOTO: ID 69  terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0143 |  9:11:30 AM] -> FIN VOTO: ID 67  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0143 |  9:11:30 AM] -> CONFIRMACIÓN OK: ID 73  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0143 |  9:11:30 AM] -> SPAWN: ID 74  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0144 |  9:12:00 AM] -> SPAWN: ID 75  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0145 |  9:12:30 AM] -> CONFIRMACIÓN OK: ID 74  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0146 |  9:13:00 AM] -> FIN VOTO: ID 68  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0146 |  9:13:00 AM] -> FIN VOTO: ID 70  terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0146 |  9:13:00 AM] -> CONFIRMACIÓN OK: ID 75  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0146 |  9:13:00 AM] -> SPAWN: ID 76  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0147 |  9:13:30 AM] -> SPAWN: ID 77  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0148 |  9:14:00 AM] -> FIN VOTO: ID 72  terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0148 |  9:14:00 AM] -> FIN VOTO: ID 71  terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0148 |  9:14:00 AM] -> CONFIRMACIÓN OK: ID 76  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0149 |  9:14:30 AM] -> FIN VOTO: ID 73  terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0149 |  9:14:30 AM] -> CONFIRMACIÓN OK: ID 77  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0149 |  9:14:30 AM] -> SPAWN: ID 78  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0150 |  9:15:00 AM] -> SPAWN: ID 79  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0151 |  9:15:30 AM] -> FIN VOTO: ID 74  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0151 |  9:15:30 AM] -> FIN VOTO: ID 75  terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 0151 |  9:15:30 AM] -> CONFIRMACIÓN OK: ID 78  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0152 |  9:16:00 AM] -> CONFIRMACIÓN OK: ID 79  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0153 |  9:16:30 AM] -> SPAWN: ID 80  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0154 |  9:17:00 AM] -> FIN VOTO: ID 76  terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0154 |  9:17:00 AM] -> SPAWN: ID 81  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0155 |  9:17:30 AM] -> CONFIRMACIÓN OK: ID 80  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0155 |  9:17:30 AM] -> SPAWN: ID 82  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0156 |  9:18:00 AM] -> FIN VOTO: ID 77  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0156 |  9:18:00 AM] -> CONFIRMACIÓN OK: ID 81  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0157 |  9:18:30 AM] -> FIN VOTO: ID 78  terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0157 |  9:18:30 AM] -> CONFIRMACIÓN OK: ID 82  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0157 |  9:18:30 AM] -> SPAWN: ID 83  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0158 |  9:19:00 AM] -> SPAWN: ID 84  entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 0159 |  9:19:30 AM] -> FIN VOTO: ID 79  terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0159 |  9:19:30 AM] -> CONFIRMACIÓN OK: ID 83  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0160 |  9:20:00 AM] -> CONFIRMACIÓN OK: ID 84  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0160 |  9:20:00 AM] -> SPAWN: ID 85  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0161 |  9:20:30 AM] -> SPAWN: ID 86  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0162 |  9:21:00 AM] -> FIN VOTO: ID 82  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0162 |  9:21:00 AM] -> CONFIRMACIÓN OK: ID 85  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0162 |  9:21:00 AM] -> SPAWN: ID 87  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0163 |  9:21:30 AM] -> FIN VOTO: ID 80  terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0163 |  9:21:30 AM] -> FIN VOTO: ID 84  terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0163 |  9:21:30 AM] -> CONFIRMACIÓN OK: ID 86  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0163 |  9:21:30 AM] -> SPAWN: ID 88  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0164 |  9:22:00 AM] -> FIN VOTO: ID 83  terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 0164 |  9:22:00 AM] -> CONFIRMACIÓN OK: ID 87  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0165 |  9:22:30 AM] -> CONFIRMACIÓN OK: ID 88  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0166 |  9:23:00 AM] -> FIN VOTO: ID 81  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0167 |  9:23:30 AM] -> FIN VOTO: ID 85  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0167 |  9:23:30 AM] -> SPAWN: ID 89  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0168 |  9:24:00 AM] -> FIN VOTO: ID 87  terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0168 |  9:24:00 AM] -> SPAWN: ID 90  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0169 |  9:24:30 AM] -> CONFIRMACIÓN OK: ID 89  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0170 |  9:25:00 AM] -> FIN VOTO: ID 86  terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0170 |  9:25:00 AM] -> CONFIRMACIÓN OK: ID 90  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0170 |  9:25:00 AM] -> SPAWN: ID 91  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0171 |  9:25:30 AM] -> FIN VOTO: ID 88  terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0171 |  9:25:30 AM] -> SPAWN: ID 92  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0172 |  9:26:00 AM] -> CONFIRMACIÓN OK: ID 91  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0172 |  9:26:00 AM] -> SPAWN: ID 93  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0173 |  9:26:30 AM] -> CONFIRMACIÓN OK: ID 92  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0174 |  9:27:00 AM] -> FIN VOTO: ID 89  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0174 |  9:27:00 AM] -> CONFIRMACIÓN OK: ID 93  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0175 |  9:27:30 AM] -> FIN VOTO: ID 90  terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0176 |  9:28:00 AM] -> SPAWN: ID 94  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0177 |  9:28:30 AM] -> SPAWN: ID 95  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0178 |  9:29:00 AM] -> FIN VOTO: ID 91  terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0178 |  9:29:00 AM] -> CONFIRMACIÓN OK: ID 94  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0178 |  9:29:00 AM] -> SPAWN: ID 96  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0179 |  9:29:30 AM] -> CONFIRMACIÓN OK: ID 95  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0179 |  9:29:30 AM] -> SPAWN: ID 97  entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0180 |  9:30:00 AM] -> CONFIRMACIÓN OK: ID 96  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0181 |  9:30:30 AM] -> FIN VOTO: ID 92  terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0181 |  9:30:30 AM] -> CONFIRMACIÓN OK: ID 97  verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0182 |  9:31:00 AM] -> FIN VOTO: ID 93  terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0185 |  9:32:30 AM] -> FIN VOTO: ID 94  terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0185 |  9:32:30 AM] -> FIN VOTO: ID 95  terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0185 |  9:32:30 AM] -> FIN VOTO: ID 96  terminó de votar en Casilla 5 (Voto emitido por Otros)
+[Beat 0185 |  9:32:30 AM] -> SPAWN: ID 98  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0186 |  9:33:00 AM] -> FIN VOTO: ID 97  terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0187 |  9:33:30 AM] -> CONFIRMACIÓN OK: ID 98  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0187 |  9:33:30 AM] -> SPAWN: ID 99  entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0189 |  9:34:30 AM] -> CONFIRMACIÓN OK: ID 99  verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0191 |  9:35:30 AM] -> SPAWN: ID 100 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0192 |  9:36:00 AM] -> SPAWN: ID 101 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0193 |  9:36:30 AM] -> CONFIRMACIÓN OK: ID 100 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0194 |  9:37:00 AM] -> FIN VOTO: ID 98  terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0194 |  9:37:00 AM] -> CONFIRMACIÓN OK: ID 101 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0194 |  9:37:00 AM] -> SPAWN: ID 102 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0195 |  9:37:30 AM] -> SPAWN: ID 103 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0196 |  9:38:00 AM] -> CONFIRMACIÓN OK: ID 102 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0197 |  9:38:30 AM] -> FIN VOTO: ID 99  terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0197 |  9:38:30 AM] -> CONFIRMACIÓN OK: ID 103 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0197 |  9:38:30 AM] -> SPAWN: ID 104 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0198 |  9:39:00 AM] -> FIN VOTO: ID 101 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0198 |  9:39:00 AM] -> SPAWN: ID 105 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0199 |  9:39:30 AM] -> FIN VOTO: ID 100 terminó de votar en Casilla 3 (Voto emitido por Movimiento Ciudadano)
+[Beat 0199 |  9:39:30 AM] -> CONFIRMACIÓN OK: ID 104 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0200 |  9:40:00 AM] -> CONFIRMACIÓN OK: ID 105 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0200 |  9:40:00 AM] -> SPAWN: ID 106 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0201 |  9:40:30 AM] -> FIN VOTO: ID 103 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0202 |  9:41:00 AM] -> CONFIRMACIÓN OK: ID 106 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0202 |  9:41:00 AM] -> SPAWN: ID 107 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0204 |  9:42:00 AM] -> FIN VOTO: ID 102 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0204 |  9:42:00 AM] -> CONFIRMACIÓN OK: ID 107 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0204 |  9:42:00 AM] -> SPAWN: ID 108 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0206 |  9:43:00 AM] -> FIN VOTO: ID 104 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0206 |  9:43:00 AM] -> CONFIRMACIÓN OK: ID 108 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0207 |  9:43:30 AM] -> FIN VOTO: ID 105 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0208 |  9:44:00 AM] -> FIN VOTO: ID 107 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 0209 |  9:44:30 AM] -> FIN VOTO: ID 106 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0210 |  9:45:00 AM] -> SPAWN: ID 109 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0212 |  9:46:00 AM] -> CONFIRMACIÓN OK: ID 109 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0213 |  9:46:30 AM] -> FIN VOTO: ID 108 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0213 |  9:46:30 AM] -> SPAWN: ID 110 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0215 |  9:47:30 AM] -> CONFIRMACIÓN OK: ID 110 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0216 |  9:48:00 AM] -> SPAWN: ID 111 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0218 |  9:49:00 AM] -> CONFIRMACIÓN OK: ID 111 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0218 |  9:49:00 AM] -> SPAWN: ID 112 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0219 |  9:49:30 AM] -> FIN VOTO: ID 109 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0220 |  9:50:00 AM] -> CONFIRMACIÓN OK: ID 112 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0220 |  9:50:00 AM] -> SPAWN: ID 113 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0221 |  9:50:30 AM] -> FIN VOTO: ID 110 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0222 |  9:51:00 AM] -> CONFIRMACIÓN OK: ID 113 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0223 |  9:51:30 AM] -> FIN VOTO: ID 112 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0223 |  9:51:30 AM] -> SPAWN: ID 114 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0224 |  9:52:00 AM] -> SPAWN: ID 115 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0225 |  9:52:30 AM] -> CONFIRMACIÓN OK: ID 114 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0225 |  9:52:30 AM] -> SPAWN: ID 116 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0226 |  9:53:00 AM] -> CONFIRMACIÓN OK: ID 115 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0227 |  9:53:30 AM] -> FIN VOTO: ID 111 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0227 |  9:53:30 AM] -> CONFIRMACIÓN OK: ID 116 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0227 |  9:53:30 AM] -> SPAWN: ID 117 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0228 |  9:54:00 AM] -> SPAWN: ID 118 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0229 |  9:54:30 AM] -> FIN VOTO: ID 113 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0229 |  9:54:30 AM] -> CONFIRMACIÓN OK: ID 117 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0229 |  9:54:30 AM] -> SPAWN: ID 119 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0230 |  9:55:00 AM] -> CONFIRMACIÓN OK: ID 118 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0231 |  9:55:30 AM] -> CONFIRMACIÓN OK: ID 119 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0231 |  9:55:30 AM] -> SPAWN: ID 120 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 0232 |  9:56:00 AM] -> FIN VOTO: ID 116 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0233 |  9:56:30 AM] -> FIN VOTO: ID 114 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0233 |  9:56:30 AM] -> CONFIRMACIÓN OK: ID 120 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0233 |  9:56:30 AM] -> SPAWN: ID 121 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0234 |  9:57:00 AM] -> FIN VOTO: ID 115 terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0235 |  9:57:30 AM] -> CONFIRMACIÓN OK: ID 121 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0236 |  9:58:00 AM] -> FIN VOTO: ID 118 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 0237 |  9:58:30 AM] -> SPAWN: ID 122 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0238 |  9:59:00 AM] -> FIN VOTO: ID 117 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0238 |  9:59:00 AM] -> FIN VOTO: ID 119 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0238 |  9:59:00 AM] -> SPAWN: ID 123 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0239 |  9:59:30 AM] -> CONFIRMACIÓN OK: ID 122 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0240 | 10:00:00 AM] -> FIN VOTO: ID 120 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0240 | 10:00:00 AM] -> RECHAZADO: ID 123 INE inválida en Recipiente 2 -> Se retira sin votar
+[Beat 0240 | 10:00:00 AM] -> SPAWN: ID 124 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0242 | 10:01:00 AM] -> CONFIRMACIÓN OK: ID 124 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0242 | 10:01:00 AM] -> SPAWN: ID 125 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0243 | 10:01:30 AM] -> SPAWN: ID 126 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0244 | 10:02:00 AM] -> FIN VOTO: ID 121 terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 0244 | 10:02:00 AM] -> CONFIRMACIÓN OK: ID 125 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0244 | 10:02:00 AM] -> SPAWN: ID 127 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0245 | 10:02:30 AM] -> FIN VOTO: ID 122 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0245 | 10:02:30 AM] -> CONFIRMACIÓN OK: ID 126 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0246 | 10:03:00 AM] -> CONFIRMACIÓN OK: ID 127 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0246 | 10:03:00 AM] -> SPAWN: ID 128 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0247 | 10:03:30 AM] -> SPAWN: ID 129 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 0248 | 10:04:00 AM] -> CONFIRMACIÓN OK: ID 128 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0249 | 10:04:30 AM] -> CONFIRMACIÓN OK: ID 129 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0249 | 10:04:30 AM] -> SPAWN: ID 130 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0250 | 10:05:00 AM] -> FIN VOTO: ID 124 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0251 | 10:05:30 AM] -> FIN VOTO: ID 125 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0251 | 10:05:30 AM] -> CONFIRMACIÓN OK: ID 130 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0252 | 10:06:00 AM] -> SPAWN: ID 131 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0254 | 10:07:00 AM] -> FIN VOTO: ID 126 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0254 | 10:07:00 AM] -> FIN VOTO: ID 129 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0254 | 10:07:00 AM] -> CONFIRMACIÓN OK: ID 131 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0254 | 10:07:00 AM] -> SPAWN: ID 132 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0255 | 10:07:30 AM] -> FIN VOTO: ID 127 terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0255 | 10:07:30 AM] -> SPAWN: ID 133 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0256 | 10:08:00 AM] -> FIN VOTO: ID 128 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0256 | 10:08:00 AM] -> CONFIRMACIÓN OK: ID 132 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0257 | 10:08:30 AM] -> CONFIRMACIÓN OK: ID 133 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0258 | 10:09:00 AM] -> FIN VOTO: ID 131 terminó de votar en Casilla 1 (Voto emitido por Nulos)
+[Beat 0259 | 10:09:30 AM] -> FIN VOTO: ID 130 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0261 | 10:10:30 AM] -> FIN VOTO: ID 132 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0262 | 10:11:00 AM] -> SPAWN: ID 134 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0264 | 10:12:00 AM] -> FIN VOTO: ID 133 terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 0264 | 10:12:00 AM] -> CONFIRMACIÓN OK: ID 134 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0264 | 10:12:00 AM] -> SPAWN: ID 135 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0266 | 10:13:00 AM] -> CONFIRMACIÓN OK: ID 135 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0266 | 10:13:00 AM] -> SPAWN: ID 136 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0268 | 10:14:00 AM] -> CONFIRMACIÓN OK: ID 136 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0268 | 10:14:00 AM] -> SPAWN: ID 137 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0270 | 10:15:00 AM] -> FIN VOTO: ID 134 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0270 | 10:15:00 AM] -> CONFIRMACIÓN OK: ID 137 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0270 | 10:15:00 AM] -> SPAWN: ID 138 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0271 | 10:15:30 AM] -> FIN VOTO: ID 135 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0272 | 10:16:00 AM] -> CONFIRMACIÓN OK: ID 138 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0272 | 10:16:00 AM] -> SPAWN: ID 139 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0274 | 10:17:00 AM] -> CONFIRMACIÓN OK: ID 139 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0274 | 10:17:00 AM] -> SPAWN: ID 140 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0275 | 10:17:30 AM] -> FIN VOTO: ID 136 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0276 | 10:18:00 AM] -> FIN VOTO: ID 138 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0276 | 10:18:00 AM] -> CONFIRMACIÓN OK: ID 140 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0278 | 10:19:00 AM] -> FIN VOTO: ID 137 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0279 | 10:19:30 AM] -> SPAWN: ID 141 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0281 | 10:20:30 AM] -> FIN VOTO: ID 140 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0281 | 10:20:30 AM] -> FIN VOTO: ID 139 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 0281 | 10:20:30 AM] -> CONFIRMACIÓN OK: ID 141 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0281 | 10:20:30 AM] -> SPAWN: ID 142 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0282 | 10:21:00 AM] -> SPAWN: ID 143 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0283 | 10:21:30 AM] -> CONFIRMACIÓN OK: ID 142 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0284 | 10:22:00 AM] -> CONFIRMACIÓN OK: ID 143 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0284 | 10:22:00 AM] -> SPAWN: ID 144 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 0285 | 10:22:30 AM] -> SPAWN: ID 145 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0286 | 10:23:00 AM] -> FIN VOTO: ID 141 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0286 | 10:23:00 AM] -> CONFIRMACIÓN OK: ID 144 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0286 | 10:23:00 AM] -> SPAWN: ID 146 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0287 | 10:23:30 AM] -> CONFIRMACIÓN OK: ID 145 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0287 | 10:23:30 AM] -> SPAWN: ID 147 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0288 | 10:24:00 AM] -> CONFIRMACIÓN OK: ID 146 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0289 | 10:24:30 AM] -> CONFIRMACIÓN OK: ID 147 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0289 | 10:24:30 AM] -> SPAWN: ID 148 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0290 | 10:25:00 AM] -> FIN VOTO: ID 144 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 0290 | 10:25:00 AM] -> FIN VOTO: ID 143 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0291 | 10:25:30 AM] -> CONFIRMACIÓN OK: ID 148 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0291 | 10:25:30 AM] -> SPAWN: ID 149 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0293 | 10:26:30 AM] -> FIN VOTO: ID 142 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0293 | 10:26:30 AM] -> CONFIRMACIÓN OK: ID 149 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0294 | 10:27:00 AM] -> SPAWN: ID 150 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0295 | 10:27:30 AM] -> FIN VOTO: ID 148 terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0295 | 10:27:30 AM] -> FIN VOTO: ID 145 terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 0295 | 10:27:30 AM] -> FIN VOTO: ID 146 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0296 | 10:28:00 AM] -> CONFIRMACIÓN OK: ID 150 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0297 | 10:28:30 AM] -> FIN VOTO: ID 147 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0300 | 10:30:00 AM] -> FIN VOTO: ID 149 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0301 | 10:30:30 AM] -> SPAWN: ID 151 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0302 | 10:31:00 AM] -> FIN VOTO: ID 150 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0303 | 10:31:30 AM] -> CONFIRMACIÓN OK: ID 151 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0304 | 10:32:00 AM] -> SPAWN: ID 152 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0306 | 10:33:00 AM] -> CONFIRMACIÓN OK: ID 152 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0306 | 10:33:00 AM] -> SPAWN: ID 153 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0308 | 10:34:00 AM] -> CONFIRMACIÓN OK: ID 153 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0309 | 10:34:30 AM] -> FIN VOTO: ID 151 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0310 | 10:35:00 AM] -> FIN VOTO: ID 152 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0310 | 10:35:00 AM] -> SPAWN: ID 154 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 0311 | 10:35:30 AM] -> SPAWN: ID 155 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0312 | 10:36:00 AM] -> CONFIRMACIÓN OK: ID 154 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0313 | 10:36:30 AM] -> FIN VOTO: ID 153 terminó de votar en Casilla 3 (Voto emitido por Movimiento Ciudadano)
+[Beat 0313 | 10:36:30 AM] -> CONFIRMACIÓN OK: ID 155 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0315 | 10:37:30 AM] -> SPAWN: ID 156 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0316 | 10:38:00 AM] -> SPAWN: ID 157 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0317 | 10:38:30 AM] -> CONFIRMACIÓN OK: ID 156 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0317 | 10:38:30 AM] -> SPAWN: ID 158 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0318 | 10:39:00 AM] -> FIN VOTO: ID 154 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0318 | 10:39:00 AM] -> CONFIRMACIÓN OK: ID 157 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0318 | 10:39:00 AM] -> SPAWN: ID 159 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0319 | 10:39:30 AM] -> CONFIRMACIÓN OK: ID 158 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0319 | 10:39:30 AM] -> SPAWN: ID 160 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0320 | 10:40:00 AM] -> CONFIRMACIÓN OK: ID 159 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0321 | 10:40:30 AM] -> CONFIRMACIÓN OK: ID 160 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0322 | 10:41:00 AM] -> FIN VOTO: ID 155 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0323 | 10:41:30 AM] -> FIN VOTO: ID 156 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0323 | 10:41:30 AM] -> SPAWN: ID 161 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0324 | 10:42:00 AM] -> FIN VOTO: ID 157 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0324 | 10:42:00 AM] -> SPAWN: ID 162 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0325 | 10:42:30 AM] -> CONFIRMACIÓN OK: ID 161 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0326 | 10:43:00 AM] -> FIN VOTO: ID 158 terminó de votar en Casilla 4 (Voto emitido por Nulos)
+[Beat 0326 | 10:43:00 AM] -> CONFIRMACIÓN OK: ID 162 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0327 | 10:43:30 AM] -> FIN VOTO: ID 159 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 0330 | 10:45:00 AM] -> FIN VOTO: ID 161 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0330 | 10:45:00 AM] -> FIN VOTO: ID 160 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0330 | 10:45:00 AM] -> SPAWN: ID 163 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0331 | 10:45:30 AM] -> SPAWN: ID 164 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0332 | 10:46:00 AM] -> CONFIRMACIÓN OK: ID 163 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0332 | 10:46:00 AM] -> SPAWN: ID 165 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0333 | 10:46:30 AM] -> CONFIRMACIÓN OK: ID 164 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0334 | 10:47:00 AM] -> FIN VOTO: ID 162 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0334 | 10:47:00 AM] -> RECHAZADO: ID 165 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0336 | 10:48:00 AM] -> SPAWN: ID 166 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0338 | 10:49:00 AM] -> CONFIRMACIÓN OK: ID 166 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0340 | 10:50:00 AM] -> FIN VOTO: ID 163 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0341 | 10:50:30 AM] -> FIN VOTO: ID 164 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0342 | 10:51:00 AM] -> SPAWN: ID 167 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0344 | 10:52:00 AM] -> FIN VOTO: ID 166 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0344 | 10:52:00 AM] -> CONFIRMACIÓN OK: ID 167 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0344 | 10:52:00 AM] -> SPAWN: ID 168 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0345 | 10:52:30 AM] -> SPAWN: ID 169 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0346 | 10:53:00 AM] -> CONFIRMACIÓN OK: ID 168 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0347 | 10:53:30 AM] -> CONFIRMACIÓN OK: ID 169 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0348 | 10:54:00 AM] -> SPAWN: ID 170 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0350 | 10:55:00 AM] -> FIN VOTO: ID 167 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0350 | 10:55:00 AM] -> CONFIRMACIÓN OK: ID 170 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0351 | 10:55:30 AM] -> SPAWN: ID 171 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0352 | 10:56:00 AM] -> FIN VOTO: ID 169 terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0353 | 10:56:30 AM] -> FIN VOTO: ID 168 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0353 | 10:56:30 AM] -> CONFIRMACIÓN OK: ID 171 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0353 | 10:56:30 AM] -> SPAWN: ID 172 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0354 | 10:57:00 AM] -> SPAWN: ID 173 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0355 | 10:57:30 AM] -> FIN VOTO: ID 170 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0355 | 10:57:30 AM] -> RECHAZADO: ID 172 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0355 | 10:57:30 AM] -> SPAWN: ID 174 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0356 | 10:58:00 AM] -> CONFIRMACIÓN OK: ID 173 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0357 | 10:58:30 AM] -> CONFIRMACIÓN OK: ID 174 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0357 | 10:58:30 AM] -> SPAWN: ID 175 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0358 | 10:59:00 AM] -> SPAWN: ID 176 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0359 | 10:59:30 AM] -> CONFIRMACIÓN OK: ID 175 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0359 | 10:59:30 AM] -> SPAWN: ID 177 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0360 | 11:00:00 AM] -> CONFIRMACIÓN OK: ID 176 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0361 | 11:00:30 AM] -> FIN VOTO: ID 171 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0361 | 11:00:30 AM] -> CONFIRMACIÓN OK: ID 177 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0361 | 11:00:30 AM] -> SPAWN: ID 178 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0362 | 11:01:00 AM] -> SPAWN: ID 179 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0363 | 11:01:30 AM] -> FIN VOTO: ID 174 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0363 | 11:01:30 AM] -> CONFIRMACIÓN OK: ID 178 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0363 | 11:01:30 AM] -> SPAWN: ID 180 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 0364 | 11:02:00 AM] -> FIN VOTO: ID 176 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0364 | 11:02:00 AM] -> CONFIRMACIÓN OK: ID 179 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0365 | 11:02:30 AM] -> FIN VOTO: ID 173 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0365 | 11:02:30 AM] -> CONFIRMACIÓN OK: ID 180 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0366 | 11:03:00 AM] -> FIN VOTO: ID 175 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0368 | 11:04:00 AM] -> FIN VOTO: ID 177 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0368 | 11:04:00 AM] -> FIN VOTO: ID 179 terminó de votar en Casilla 5 (Voto emitido por Otros)
+[Beat 0368 | 11:04:00 AM] -> SPAWN: ID 181 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0369 | 11:04:30 AM] -> SPAWN: ID 182 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0370 | 11:05:00 AM] -> CONFIRMACIÓN OK: ID 181 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0371 | 11:05:30 AM] -> FIN VOTO: ID 178 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0371 | 11:05:30 AM] -> CONFIRMACIÓN OK: ID 182 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0373 | 11:06:30 AM] -> FIN VOTO: ID 180 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0376 | 11:08:00 AM] -> FIN VOTO: ID 181 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0379 | 11:09:30 AM] -> FIN VOTO: ID 182 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0382 | 11:11:00 AM] -> SPAWN: ID 183 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0383 | 11:11:30 AM] -> SPAWN: ID 184 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0384 | 11:12:00 AM] -> CONFIRMACIÓN OK: ID 183 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0385 | 11:12:30 AM] -> CONFIRMACIÓN OK: ID 184 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0385 | 11:12:30 AM] -> SPAWN: ID 185 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0386 | 11:13:00 AM] -> SPAWN: ID 186 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0387 | 11:13:30 AM] -> CONFIRMACIÓN OK: ID 185 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0388 | 11:14:00 AM] -> CONFIRMACIÓN OK: ID 186 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0389 | 11:14:30 AM] -> FIN VOTO: ID 184 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0392 | 11:16:00 AM] -> FIN VOTO: ID 183 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0393 | 11:16:30 AM] -> FIN VOTO: ID 185 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0393 | 11:16:30 AM] -> SPAWN: ID 187 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0394 | 11:17:00 AM] -> FIN VOTO: ID 186 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 0394 | 11:17:00 AM] -> SPAWN: ID 188 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0395 | 11:17:30 AM] -> CONFIRMACIÓN OK: ID 187 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0396 | 11:18:00 AM] -> CONFIRMACIÓN OK: ID 188 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0398 | 11:19:00 AM] -> SPAWN: ID 189 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0400 | 11:20:00 AM] -> CONFIRMACIÓN OK: ID 189 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0401 | 11:20:30 AM] -> FIN VOTO: ID 187 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0402 | 11:21:00 AM] -> FIN VOTO: ID 188 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0405 | 11:22:30 AM] -> SPAWN: ID 190 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0407 | 11:23:30 AM] -> FIN VOTO: ID 189 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0407 | 11:23:30 AM] -> CONFIRMACIÓN OK: ID 190 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0410 | 11:25:00 AM] -> SPAWN: ID 191 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0411 | 11:25:30 AM] -> FIN VOTO: ID 190 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0412 | 11:26:00 AM] -> CONFIRMACIÓN OK: ID 191 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0414 | 11:27:00 AM] -> SPAWN: ID 192 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0416 | 11:28:00 AM] -> CONFIRMACIÓN OK: ID 192 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0417 | 11:28:30 AM] -> SPAWN: ID 193 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0419 | 11:29:30 AM] -> FIN VOTO: ID 191 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0419 | 11:29:30 AM] -> CONFIRMACIÓN OK: ID 193 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0419 | 11:29:30 AM] -> SPAWN: ID 194 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0421 | 11:30:30 AM] -> CONFIRMACIÓN OK: ID 194 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0423 | 11:31:30 AM] -> FIN VOTO: ID 192 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0426 | 11:33:00 AM] -> SPAWN: ID 195 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0427 | 11:33:30 AM] -> FIN VOTO: ID 193 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0428 | 11:34:00 AM] -> CONFIRMACIÓN OK: ID 195 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0429 | 11:34:30 AM] -> SPAWN: ID 196 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0430 | 11:35:00 AM] -> FIN VOTO: ID 194 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0431 | 11:35:30 AM] -> CONFIRMACIÓN OK: ID 196 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0432 | 11:36:00 AM] -> FIN VOTO: ID 195 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0434 | 11:37:00 AM] -> SPAWN: ID 197 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0436 | 11:38:00 AM] -> CONFIRMACIÓN OK: ID 197 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0440 | 11:40:00 AM] -> FIN VOTO: ID 196 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0441 | 11:40:30 AM] -> SPAWN: ID 198 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0442 | 11:41:00 AM] -> SPAWN: ID 199 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0443 | 11:41:30 AM] -> FIN VOTO: ID 197 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0443 | 11:41:30 AM] -> CONFIRMACIÓN OK: ID 198 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0444 | 11:42:00 AM] -> CONFIRMACIÓN OK: ID 199 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0444 | 11:42:00 AM] -> SPAWN: ID 200 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0446 | 11:43:00 AM] -> RECHAZADO: ID 200 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0447 | 11:43:30 AM] -> FIN VOTO: ID 198 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0452 | 11:46:00 AM] -> FIN VOTO: ID 199 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0452 | 11:46:00 AM] -> SPAWN: ID 201 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0453 | 11:46:30 AM] -> SPAWN: ID 202 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0454 | 11:47:00 AM] -> CONFIRMACIÓN OK: ID 201 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0454 | 11:47:00 AM] -> SPAWN: ID 203 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0455 | 11:47:30 AM] -> CONFIRMACIÓN OK: ID 202 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0456 | 11:48:00 AM] -> CONFIRMACIÓN OK: ID 203 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0456 | 11:48:00 AM] -> SPAWN: ID 204 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0458 | 11:49:00 AM] -> CONFIRMACIÓN OK: ID 204 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0461 | 11:50:30 AM] -> SPAWN: ID 205 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0462 | 11:51:00 AM] -> FIN VOTO: ID 201 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0462 | 11:51:00 AM] -> FIN VOTO: ID 202 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0462 | 11:51:00 AM] -> FIN VOTO: ID 203 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0462 | 11:51:00 AM] -> SPAWN: ID 206 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0463 | 11:51:30 AM] -> CONFIRMACIÓN OK: ID 205 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0464 | 11:52:00 AM] -> FIN VOTO: ID 204 terminó de votar en Casilla 4 (Voto emitido por Movimiento Ciudadano)
+[Beat 0464 | 11:52:00 AM] -> CONFIRMACIÓN OK: ID 206 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0464 | 11:52:00 AM] -> SPAWN: ID 207 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0466 | 11:53:00 AM] -> CONFIRMACIÓN OK: ID 207 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0471 | 11:55:30 AM] -> FIN VOTO: ID 205 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0473 | 11:56:30 AM] -> FIN VOTO: ID 206 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0474 | 11:57:00 AM] -> SPAWN: ID 208 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0475 | 11:57:30 AM] -> FIN VOTO: ID 207 terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0476 | 11:58:00 AM] -> CONFIRMACIÓN OK: ID 208 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0476 | 11:58:00 AM] -> SPAWN: ID 209 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0478 | 11:59:00 AM] -> CONFIRMACIÓN OK: ID 209 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0478 | 11:59:00 AM] -> SPAWN: ID 210 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0479 | 11:59:30 AM] -> SPAWN: ID 211 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0480 | 12:00:00 PM] -> CONFIRMACIÓN OK: ID 210 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0481 | 12:00:30 PM] -> FIN VOTO: ID 208 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0481 | 12:00:30 PM] -> CONFIRMACIÓN OK: ID 211 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0483 | 12:01:30 PM] -> FIN VOTO: ID 209 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0485 | 12:02:30 PM] -> FIN VOTO: ID 211 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 0486 | 12:03:00 PM] -> FIN VOTO: ID 210 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0530 | 12:25:00 PM] -> SPAWN: ID 212 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0532 | 12:26:00 PM] -> CONFIRMACIÓN OK: ID 212 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0537 | 12:28:30 PM] -> FIN VOTO: ID 212 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0550 | 12:35:00 PM] -> SPAWN: ID 213 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0552 | 12:36:00 PM] -> CONFIRMACIÓN OK: ID 213 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0561 | 12:40:30 PM] -> FIN VOTO: ID 213 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0570 | 12:45:00 PM] -> SPAWN: ID 214 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0572 | 12:46:00 PM] -> CONFIRMACIÓN OK: ID 214 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0575 | 12:47:30 PM] -> SPAWN: ID 215 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0576 | 12:48:00 PM] -> FIN VOTO: ID 214 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0577 | 12:48:30 PM] -> CONFIRMACIÓN OK: ID 215 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0584 | 12:52:00 PM] -> FIN VOTO: ID 215 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0585 | 12:52:30 PM] -> SPAWN: ID 216 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0587 | 12:53:30 PM] -> CONFIRMACIÓN OK: ID 216 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0593 | 12:56:30 PM] -> FIN VOTO: ID 216 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0600 |  1:00:00 PM] -> SPAWN: ID 217 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0602 |  1:01:00 PM] -> CONFIRMACIÓN OK: ID 217 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0603 |  1:01:30 PM] -> SPAWN: ID 218 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0605 |  1:02:30 PM] -> CONFIRMACIÓN OK: ID 218 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0607 |  1:03:30 PM] -> FIN VOTO: ID 217 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0610 |  1:05:00 PM] -> SPAWN: ID 219 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 0611 |  1:05:30 PM] -> FIN VOTO: ID 218 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0612 |  1:06:00 PM] -> CONFIRMACIÓN OK: ID 219 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0616 |  1:08:00 PM] -> FIN VOTO: ID 219 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0642 |  1:21:00 PM] -> SPAWN: ID 220 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0644 |  1:22:00 PM] -> CONFIRMACIÓN OK: ID 220 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0649 |  1:24:30 PM] -> SPAWN: ID 221 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0650 |  1:25:00 PM] -> FIN VOTO: ID 220 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0651 |  1:25:30 PM] -> CONFIRMACIÓN OK: ID 221 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0655 |  1:27:30 PM] -> SPAWN: ID 222 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0657 |  1:28:30 PM] -> CONFIRMACIÓN OK: ID 222 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0657 |  1:28:30 PM] -> SPAWN: ID 223 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0659 |  1:29:30 PM] -> FIN VOTO: ID 221 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0659 |  1:29:30 PM] -> CONFIRMACIÓN OK: ID 223 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0662 |  1:31:00 PM] -> SPAWN: ID 224 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0664 |  1:32:00 PM] -> CONFIRMACIÓN OK: ID 224 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0665 |  1:32:30 PM] -> FIN VOTO: ID 222 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0666 |  1:33:00 PM] -> FIN VOTO: ID 223 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0671 |  1:35:30 PM] -> FIN VOTO: ID 224 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0703 |  1:51:30 PM] -> SPAWN: ID 225 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0704 |  1:52:00 PM] -> SPAWN: ID 226 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0705 |  1:52:30 PM] -> RECHAZADO: ID 225 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0706 |  1:53:00 PM] -> CONFIRMACIÓN OK: ID 226 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0715 |  1:57:30 PM] -> FIN VOTO: ID 226 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0718 |  1:59:00 PM] -> SPAWN: ID 227 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0720 |  2:00:00 PM] -> CONFIRMACIÓN OK: ID 227 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0725 |  2:02:30 PM] -> FIN VOTO: ID 227 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0726 |  2:03:00 PM] -> SPAWN: ID 228 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0728 |  2:04:00 PM] -> CONFIRMACIÓN OK: ID 228 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0730 |  2:05:00 PM] -> SPAWN: ID 229 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0732 |  2:06:00 PM] -> CONFIRMACIÓN OK: ID 229 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0735 |  2:07:30 PM] -> FIN VOTO: ID 228 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0735 |  2:07:30 PM] -> SPAWN: ID 230 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0737 |  2:08:30 PM] -> CONFIRMACIÓN OK: ID 230 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0738 |  2:09:00 PM] -> SPAWN: ID 231 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0739 |  2:09:30 PM] -> FIN VOTO: ID 229 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0740 |  2:10:00 PM] -> CONFIRMACIÓN OK: ID 231 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0741 |  2:10:30 PM] -> SPAWN: ID 232 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0742 |  2:11:00 PM] -> FIN VOTO: ID 230 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0743 |  2:11:30 PM] -> CONFIRMACIÓN OK: ID 232 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0746 |  2:13:00 PM] -> FIN VOTO: ID 231 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0749 |  2:14:30 PM] -> FIN VOTO: ID 232 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0752 |  2:16:00 PM] -> SPAWN: ID 233 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0754 |  2:17:00 PM] -> CONFIRMACIÓN OK: ID 233 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0760 |  2:20:00 PM] -> FIN VOTO: ID 233 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0773 |  2:26:30 PM] -> SPAWN: ID 234 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0775 |  2:27:30 PM] -> CONFIRMACIÓN OK: ID 234 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0775 |  2:27:30 PM] -> SPAWN: ID 235 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0777 |  2:28:30 PM] -> CONFIRMACIÓN OK: ID 235 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0782 |  2:31:00 PM] -> FIN VOTO: ID 234 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0782 |  2:31:00 PM] -> FIN VOTO: ID 235 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0799 |  2:39:30 PM] -> SPAWN: ID 236 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0801 |  2:40:30 PM] -> CONFIRMACIÓN OK: ID 236 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0806 |  2:43:00 PM] -> FIN VOTO: ID 236 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0824 |  2:52:00 PM] -> SPAWN: ID 237 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0826 |  2:53:00 PM] -> CONFIRMACIÓN OK: ID 237 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0829 |  2:54:30 PM] -> SPAWN: ID 238 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 0831 |  2:55:30 PM] -> CONFIRMACIÓN OK: ID 238 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0832 |  2:56:00 PM] -> FIN VOTO: ID 237 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0837 |  2:58:30 PM] -> FIN VOTO: ID 238 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0837 |  2:58:30 PM] -> SPAWN: ID 239 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0839 |  2:59:30 PM] -> RECHAZADO: ID 239 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0839 |  2:59:30 PM] -> SPAWN: ID 240 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0841 |  3:00:30 PM] -> RECHAZADO: ID 240 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0845 |  3:02:30 PM] -> SPAWN: ID 241 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0846 |  3:03:00 PM] -> SPAWN: ID 242 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0847 |  3:03:30 PM] -> CONFIRMACIÓN OK: ID 241 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0848 |  3:04:00 PM] -> CONFIRMACIÓN OK: ID 242 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0849 |  3:04:30 PM] -> SPAWN: ID 243 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0851 |  3:05:30 PM] -> CONFIRMACIÓN OK: ID 243 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0851 |  3:05:30 PM] -> SPAWN: ID 244 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0852 |  3:06:00 PM] -> FIN VOTO: ID 241 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0853 |  3:06:30 PM] -> CONFIRMACIÓN OK: ID 244 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0857 |  3:08:30 PM] -> FIN VOTO: ID 242 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0858 |  3:09:00 PM] -> FIN VOTO: ID 244 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0858 |  3:09:00 PM] -> SPAWN: ID 245 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 0860 |  3:10:00 PM] -> FIN VOTO: ID 243 terminó de votar en Casilla 3 (Voto emitido por Nulos)
+[Beat 0860 |  3:10:00 PM] -> CONFIRMACIÓN OK: ID 245 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0861 |  3:10:30 PM] -> SPAWN: ID 246 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0862 |  3:11:00 PM] -> SPAWN: ID 247 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0863 |  3:11:30 PM] -> RECHAZADO: ID 246 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0863 |  3:11:30 PM] -> SPAWN: ID 248 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0864 |  3:12:00 PM] -> FIN VOTO: ID 245 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 0864 |  3:12:00 PM] -> CONFIRMACIÓN OK: ID 247 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0865 |  3:12:30 PM] -> CONFIRMACIÓN OK: ID 248 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0866 |  3:13:00 PM] -> SPAWN: ID 249 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0867 |  3:13:30 PM] -> SPAWN: ID 250 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0868 |  3:14:00 PM] -> RECHAZADO: ID 249 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 0868 |  3:14:00 PM] -> SPAWN: ID 251 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0869 |  3:14:30 PM] -> FIN VOTO: ID 248 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0869 |  3:14:30 PM] -> CONFIRMACIÓN OK: ID 250 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0870 |  3:15:00 PM] -> CONFIRMACIÓN OK: ID 251 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0872 |  3:16:00 PM] -> FIN VOTO: ID 247 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0874 |  3:17:00 PM] -> SPAWN: ID 252 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0875 |  3:17:30 PM] -> FIN VOTO: ID 250 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0876 |  3:18:00 PM] -> CONFIRMACIÓN OK: ID 252 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0877 |  3:18:30 PM] -> FIN VOTO: ID 251 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0882 |  3:21:00 PM] -> FIN VOTO: ID 252 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0885 |  3:22:30 PM] -> SPAWN: ID 253 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0886 |  3:23:00 PM] -> SPAWN: ID 254 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0887 |  3:23:30 PM] -> CONFIRMACIÓN OK: ID 253 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0888 |  3:24:00 PM] -> CONFIRMACIÓN OK: ID 254 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0890 |  3:25:00 PM] -> SPAWN: ID 255 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0891 |  3:25:30 PM] -> SPAWN: ID 256 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0892 |  3:26:00 PM] -> CONFIRMACIÓN OK: ID 255 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0892 |  3:26:00 PM] -> SPAWN: ID 257 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0893 |  3:26:30 PM] -> CONFIRMACIÓN OK: ID 256 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0894 |  3:27:00 PM] -> CONFIRMACIÓN OK: ID 257 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0895 |  3:27:30 PM] -> FIN VOTO: ID 253 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 0895 |  3:27:30 PM] -> FIN VOTO: ID 254 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0897 |  3:28:30 PM] -> SPAWN: ID 258 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0898 |  3:29:00 PM] -> FIN VOTO: ID 255 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 0899 |  3:29:30 PM] -> CONFIRMACIÓN OK: ID 258 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0899 |  3:29:30 PM] -> SPAWN: ID 259 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0901 |  3:30:30 PM] -> FIN VOTO: ID 256 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 0901 |  3:30:30 PM] -> CONFIRMACIÓN OK: ID 259 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0901 |  3:30:30 PM] -> SPAWN: ID 260 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0902 |  3:31:00 PM] -> FIN VOTO: ID 257 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 0903 |  3:31:30 PM] -> FIN VOTO: ID 258 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0903 |  3:31:30 PM] -> CONFIRMACIÓN OK: ID 260 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0904 |  3:32:00 PM] -> SPAWN: ID 261 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0905 |  3:32:30 PM] -> SPAWN: ID 262 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0906 |  3:33:00 PM] -> CONFIRMACIÓN OK: ID 261 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0906 |  3:33:00 PM] -> SPAWN: ID 263 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0907 |  3:33:30 PM] -> CONFIRMACIÓN OK: ID 262 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0908 |  3:34:00 PM] -> CONFIRMACIÓN OK: ID 263 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0909 |  3:34:30 PM] -> FIN VOTO: ID 259 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 0909 |  3:34:30 PM] -> SPAWN: ID 264 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0910 |  3:35:00 PM] -> FIN VOTO: ID 260 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0911 |  3:35:30 PM] -> CONFIRMACIÓN OK: ID 264 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0912 |  3:36:00 PM] -> FIN VOTO: ID 261 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 0912 |  3:36:00 PM] -> SPAWN: ID 265 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0913 |  3:36:30 PM] -> SPAWN: ID 266 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0914 |  3:37:00 PM] -> FIN VOTO: ID 263 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 0914 |  3:37:00 PM] -> CONFIRMACIÓN OK: ID 265 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0915 |  3:37:30 PM] -> FIN VOTO: ID 264 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0915 |  3:37:30 PM] -> FIN VOTO: ID 262 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0915 |  3:37:30 PM] -> CONFIRMACIÓN OK: ID 266 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0918 |  3:39:00 PM] -> FIN VOTO: ID 265 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0920 |  3:40:00 PM] -> FIN VOTO: ID 266 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 0923 |  3:41:30 PM] -> SPAWN: ID 267 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0925 |  3:42:30 PM] -> CONFIRMACIÓN OK: ID 267 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0927 |  3:43:30 PM] -> SPAWN: ID 268 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0929 |  3:44:30 PM] -> CONFIRMACIÓN OK: ID 268 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0931 |  3:45:30 PM] -> FIN VOTO: ID 267 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0937 |  3:48:30 PM] -> FIN VOTO: ID 268 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0943 |  3:51:30 PM] -> SPAWN: ID 269 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0945 |  3:52:30 PM] -> CONFIRMACIÓN OK: ID 269 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0947 |  3:53:30 PM] -> SPAWN: ID 270 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0948 |  3:54:00 PM] -> SPAWN: ID 271 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 0949 |  3:54:30 PM] -> CONFIRMACIÓN OK: ID 270 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0950 |  3:55:00 PM] -> CONFIRMACIÓN OK: ID 271 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0951 |  3:55:30 PM] -> SPAWN: ID 272 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0952 |  3:56:00 PM] -> SPAWN: ID 273 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0953 |  3:56:30 PM] -> FIN VOTO: ID 270 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 0953 |  3:56:30 PM] -> CONFIRMACIÓN OK: ID 272 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0954 |  3:57:00 PM] -> FIN VOTO: ID 269 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0954 |  3:57:00 PM] -> CONFIRMACIÓN OK: ID 273 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0956 |  3:58:00 PM] -> FIN VOTO: ID 271 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0959 |  3:59:30 PM] -> FIN VOTO: ID 272 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 0961 |  4:00:30 PM] -> SPAWN: ID 274 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0962 |  4:01:00 PM] -> FIN VOTO: ID 273 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 0962 |  4:01:00 PM] -> SPAWN: ID 275 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0963 |  4:01:30 PM] -> CONFIRMACIÓN OK: ID 274 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0964 |  4:02:00 PM] -> CONFIRMACIÓN OK: ID 275 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0965 |  4:02:30 PM] -> SPAWN: ID 276 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 0966 |  4:03:00 PM] -> SPAWN: ID 277 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0967 |  4:03:30 PM] -> CONFIRMACIÓN OK: ID 276 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0968 |  4:04:00 PM] -> CONFIRMACIÓN OK: ID 277 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0968 |  4:04:00 PM] -> SPAWN: ID 278 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0969 |  4:04:30 PM] -> SPAWN: ID 279 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0970 |  4:05:00 PM] -> FIN VOTO: ID 274 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0970 |  4:05:00 PM] -> FIN VOTO: ID 275 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0970 |  4:05:00 PM] -> CONFIRMACIÓN OK: ID 278 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0970 |  4:05:00 PM] -> SPAWN: ID 280 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0971 |  4:05:30 PM] -> CONFIRMACIÓN OK: ID 279 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0971 |  4:05:30 PM] -> SPAWN: ID 281 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 0972 |  4:06:00 PM] -> FIN VOTO: ID 276 terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0972 |  4:06:00 PM] -> CONFIRMACIÓN OK: ID 280 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0972 |  4:06:00 PM] -> SPAWN: ID 282 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0973 |  4:06:30 PM] -> CONFIRMACIÓN OK: ID 281 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0974 |  4:07:00 PM] -> FIN VOTO: ID 277 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0974 |  4:07:00 PM] -> CONFIRMACIÓN OK: ID 282 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0977 |  4:08:30 PM] -> FIN VOTO: ID 278 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 0978 |  4:09:00 PM] -> SPAWN: ID 283 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0979 |  4:09:30 PM] -> FIN VOTO: ID 281 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 0979 |  4:09:30 PM] -> SPAWN: ID 284 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0980 |  4:10:00 PM] -> FIN VOTO: ID 279 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 0980 |  4:10:00 PM] -> CONFIRMACIÓN OK: ID 283 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0981 |  4:10:30 PM] -> FIN VOTO: ID 280 terminó de votar en Casilla 3 (Voto emitido por PRI)
+[Beat 0981 |  4:10:30 PM] -> FIN VOTO: ID 282 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0981 |  4:10:30 PM] -> CONFIRMACIÓN OK: ID 284 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0985 |  4:12:30 PM] -> SPAWN: ID 285 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0986 |  4:13:00 PM] -> SPAWN: ID 286 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0987 |  4:13:30 PM] -> CONFIRMACIÓN OK: ID 285 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0987 |  4:13:30 PM] -> SPAWN: ID 287 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0988 |  4:14:00 PM] -> FIN VOTO: ID 283 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 0988 |  4:14:00 PM] -> CONFIRMACIÓN OK: ID 286 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0988 |  4:14:00 PM] -> SPAWN: ID 288 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 0989 |  4:14:30 PM] -> CONFIRMACIÓN OK: ID 287 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0990 |  4:15:00 PM] -> CONFIRMACIÓN OK: ID 288 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 0991 |  4:15:30 PM] -> FIN VOTO: ID 284 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 0991 |  4:15:30 PM] -> SPAWN: ID 289 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0993 |  4:16:30 PM] -> FIN VOTO: ID 288 terminó de votar en Casilla 5 (Voto emitido por Otros)
+[Beat 0993 |  4:16:30 PM] -> CONFIRMACIÓN OK: ID 289 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 0994 |  4:17:00 PM] -> FIN VOTO: ID 286 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 0995 |  4:17:30 PM] -> FIN VOTO: ID 285 terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 0995 |  4:17:30 PM] -> FIN VOTO: ID 287 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 0998 |  4:19:00 PM] -> SPAWN: ID 290 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 0999 |  4:19:30 PM] -> SPAWN: ID 291 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1000 |  4:20:00 PM] -> FIN VOTO: ID 289 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 1000 |  4:20:00 PM] -> CONFIRMACIÓN OK: ID 290 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1001 |  4:20:30 PM] -> CONFIRMACIÓN OK: ID 291 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1003 |  4:21:30 PM] -> SPAWN: ID 292 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1005 |  4:22:30 PM] -> CONFIRMACIÓN OK: ID 292 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1006 |  4:23:00 PM] -> FIN VOTO: ID 290 terminó de votar en Casilla 1 (Voto emitido por PRI)
+[Beat 1006 |  4:23:00 PM] -> SPAWN: ID 293 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1007 |  4:23:30 PM] -> FIN VOTO: ID 291 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1008 |  4:24:00 PM] -> CONFIRMACIÓN OK: ID 293 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1009 |  4:24:30 PM] -> SPAWN: ID 294 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1010 |  4:25:00 PM] -> SPAWN: ID 295 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1011 |  4:25:30 PM] -> FIN VOTO: ID 292 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 1011 |  4:25:30 PM] -> CONFIRMACIÓN OK: ID 294 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1012 |  4:26:00 PM] -> CONFIRMACIÓN OK: ID 295 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1014 |  4:27:00 PM] -> FIN VOTO: ID 294 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1014 |  4:27:00 PM] -> SPAWN: ID 296 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1015 |  4:27:30 PM] -> FIN VOTO: ID 293 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1015 |  4:27:30 PM] -> SPAWN: ID 297 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1016 |  4:28:00 PM] -> CONFIRMACIÓN OK: ID 296 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1017 |  4:28:30 PM] -> RECHAZADO: ID 297 INE inválida en Recipiente 2 -> Se retira sin votar
+[Beat 1017 |  4:28:30 PM] -> SPAWN: ID 298 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1018 |  4:29:00 PM] -> FIN VOTO: ID 295 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1018 |  4:29:00 PM] -> SPAWN: ID 299 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1019 |  4:29:30 PM] -> CONFIRMACIÓN OK: ID 298 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1019 |  4:29:30 PM] -> SPAWN: ID 300 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1020 |  4:30:00 PM] -> CONFIRMACIÓN OK: ID 299 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1021 |  4:30:30 PM] -> CONFIRMACIÓN OK: ID 300 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1021 |  4:30:30 PM] -> SPAWN: ID 301 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1022 |  4:31:00 PM] -> SPAWN: ID 302 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1023 |  4:31:30 PM] -> CONFIRMACIÓN OK: ID 301 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1023 |  4:31:30 PM] -> SPAWN: ID 303 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1024 |  4:32:00 PM] -> FIN VOTO: ID 299 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1024 |  4:32:00 PM] -> CONFIRMACIÓN OK: ID 302 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1024 |  4:32:00 PM] -> SPAWN: ID 304 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1025 |  4:32:30 PM] -> FIN VOTO: ID 296 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1025 |  4:32:30 PM] -> CONFIRMACIÓN OK: ID 303 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1026 |  4:33:00 PM] -> FIN VOTO: ID 298 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1026 |  4:33:00 PM] -> CONFIRMACIÓN OK: ID 304 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1027 |  4:33:30 PM] -> FIN VOTO: ID 301 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 1029 |  4:34:30 PM] -> FIN VOTO: ID 304 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 1029 |  4:34:30 PM] -> FIN VOTO: ID 300 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 1029 |  4:34:30 PM] -> SPAWN: ID 305 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1031 |  4:35:30 PM] -> FIN VOTO: ID 303 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1031 |  4:35:30 PM] -> CONFIRMACIÓN OK: ID 305 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1031 |  4:35:30 PM] -> SPAWN: ID 306 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1032 |  4:36:00 PM] -> FIN VOTO: ID 302 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1032 |  4:36:00 PM] -> SPAWN: ID 307 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1033 |  4:36:30 PM] -> RECHAZADO: ID 306 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 1033 |  4:36:30 PM] -> SPAWN: ID 308 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1034 |  4:37:00 PM] -> CONFIRMACIÓN OK: ID 307 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1035 |  4:37:30 PM] -> FIN VOTO: ID 305 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 1035 |  4:37:30 PM] -> CONFIRMACIÓN OK: ID 308 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1039 |  4:39:30 PM] -> SPAWN: ID 309 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1040 |  4:40:00 PM] -> SPAWN: ID 310 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1041 |  4:40:30 PM] -> FIN VOTO: ID 308 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 1041 |  4:40:30 PM] -> FIN VOTO: ID 307 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1041 |  4:40:30 PM] -> CONFIRMACIÓN OK: ID 309 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1042 |  4:41:00 PM] -> CONFIRMACIÓN OK: ID 310 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1042 |  4:41:00 PM] -> SPAWN: ID 311 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1043 |  4:41:30 PM] -> SPAWN: ID 312 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1044 |  4:42:00 PM] -> CONFIRMACIÓN OK: ID 311 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1045 |  4:42:30 PM] -> CONFIRMACIÓN OK: ID 312 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1045 |  4:42:30 PM] -> SPAWN: ID 313 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1046 |  4:43:00 PM] -> SPAWN: ID 314 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1047 |  4:43:30 PM] -> FIN VOTO: ID 309 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1047 |  4:43:30 PM] -> FIN VOTO: ID 310 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 1047 |  4:43:30 PM] -> CONFIRMACIÓN OK: ID 313 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1047 |  4:43:30 PM] -> SPAWN: ID 315 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1048 |  4:44:00 PM] -> RECHAZADO: ID 314 INE inválida en Recipiente 2 -> Se retira sin votar
+[Beat 1049 |  4:44:30 PM] -> CONFIRMACIÓN OK: ID 315 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1049 |  4:44:30 PM] -> SPAWN: ID 316 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1050 |  4:45:00 PM] -> SPAWN: ID 317 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1051 |  4:45:30 PM] -> FIN VOTO: ID 311 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1051 |  4:45:30 PM] -> CONFIRMACIÓN OK: ID 316 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1052 |  4:46:00 PM] -> CONFIRMACIÓN OK: ID 317 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1053 |  4:46:30 PM] -> FIN VOTO: ID 312 terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 1053 |  4:46:30 PM] -> SPAWN: ID 318 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1055 |  4:47:30 PM] -> FIN VOTO: ID 313 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1055 |  4:47:30 PM] -> FIN VOTO: ID 316 terminó de votar en Casilla 3 (Voto emitido por PAN)
+[Beat 1055 |  4:47:30 PM] -> CONFIRMACIÓN OK: ID 318 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1055 |  4:47:30 PM] -> SPAWN: ID 319 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1056 |  4:48:00 PM] -> FIN VOTO: ID 315 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 1057 |  4:48:30 PM] -> CONFIRMACIÓN OK: ID 319 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1057 |  4:48:30 PM] -> SPAWN: ID 320 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1059 |  4:49:30 PM] -> CONFIRMACIÓN OK: ID 320 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1060 |  4:50:00 PM] -> SPAWN: ID 321 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1061 |  4:50:30 PM] -> FIN VOTO: ID 317 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 1061 |  4:50:30 PM] -> SPAWN: ID 322 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1062 |  4:51:00 PM] -> FIN VOTO: ID 318 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1062 |  4:51:00 PM] -> CONFIRMACIÓN OK: ID 321 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1063 |  4:51:30 PM] -> CONFIRMACIÓN OK: ID 322 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1063 |  4:51:30 PM] -> SPAWN: ID 323 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1065 |  4:52:30 PM] -> FIN VOTO: ID 319 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 1065 |  4:52:30 PM] -> CONFIRMACIÓN OK: ID 323 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1065 |  4:52:30 PM] -> SPAWN: ID 324 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1066 |  4:53:00 PM] -> FIN VOTO: ID 320 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1067 |  4:53:30 PM] -> FIN VOTO: ID 322 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 1067 |  4:53:30 PM] -> CONFIRMACIÓN OK: ID 324 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1068 |  4:54:00 PM] -> FIN VOTO: ID 321 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1072 |  4:56:00 PM] -> FIN VOTO: ID 323 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1073 |  4:56:30 PM] -> SPAWN: ID 325 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1074 |  4:57:00 PM] -> FIN VOTO: ID 324 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 1074 |  4:57:00 PM] -> SPAWN: ID 326 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1075 |  4:57:30 PM] -> CONFIRMACIÓN OK: ID 325 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1075 |  4:57:30 PM] -> SPAWN: ID 327 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1076 |  4:58:00 PM] -> CONFIRMACIÓN OK: ID 326 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1076 |  4:58:00 PM] -> SPAWN: ID 328 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1077 |  4:58:30 PM] -> CONFIRMACIÓN OK: ID 327 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1077 |  4:58:30 PM] -> SPAWN: ID 329 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1078 |  4:59:00 PM] -> CONFIRMACIÓN OK: ID 328 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1079 |  4:59:30 PM] -> CONFIRMACIÓN OK: ID 329 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1080 |  5:00:00 PM] -> FIN VOTO: ID 325 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 1080 |  5:00:00 PM] -> SPAWN: ID 330 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 1082 |  5:01:00 PM] -> CONFIRMACIÓN OK: ID 330 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1082 |  5:01:00 PM] -> SPAWN: ID 331 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1083 |  5:01:30 PM] -> FIN VOTO: ID 326 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1083 |  5:01:30 PM] -> FIN VOTO: ID 327 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1084 |  5:02:00 PM] -> FIN VOTO: ID 329 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 1084 |  5:02:00 PM] -> CONFIRMACIÓN OK: ID 331 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1085 |  5:02:30 PM] -> SPAWN: ID 332 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1086 |  5:03:00 PM] -> FIN VOTO: ID 328 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 1087 |  5:03:30 PM] -> FIN VOTO: ID 330 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1087 |  5:03:30 PM] -> CONFIRMACIÓN OK: ID 332 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1088 |  5:04:00 PM] -> SPAWN: ID 333 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1089 |  5:04:30 PM] -> SPAWN: ID 334 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1090 |  5:05:00 PM] -> FIN VOTO: ID 331 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 1090 |  5:05:00 PM] -> CONFIRMACIÓN OK: ID 333 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1090 |  5:05:00 PM] -> SPAWN: ID 335 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1091 |  5:05:30 PM] -> CONFIRMACIÓN OK: ID 334 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1092 |  5:06:00 PM] -> FIN VOTO: ID 332 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1092 |  5:06:00 PM] -> CONFIRMACIÓN OK: ID 335 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1092 |  5:06:00 PM] -> SPAWN: ID 336 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1093 |  5:06:30 PM] -> SPAWN: ID 337 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1094 |  5:07:00 PM] -> CONFIRMACIÓN OK: ID 336 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1094 |  5:07:00 PM] -> SPAWN: ID 338 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1095 |  5:07:30 PM] -> CONFIRMACIÓN OK: ID 337 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1096 |  5:08:00 PM] -> CONFIRMACIÓN OK: ID 338 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1096 |  5:08:00 PM] -> SPAWN: ID 339 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1098 |  5:09:00 PM] -> CONFIRMACIÓN OK: ID 339 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1098 |  5:09:00 PM] -> SPAWN: ID 340 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1099 |  5:09:30 PM] -> FIN VOTO: ID 333 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1099 |  5:09:30 PM] -> FIN VOTO: ID 334 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1099 |  5:09:30 PM] -> SPAWN: ID 341 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1100 |  5:10:00 PM] -> FIN VOTO: ID 335 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1100 |  5:10:00 PM] -> CONFIRMACIÓN OK: ID 340 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1100 |  5:10:00 PM] -> SPAWN: ID 342 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1101 |  5:10:30 PM] -> CONFIRMACIÓN OK: ID 341 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1102 |  5:11:00 PM] -> FIN VOTO: ID 336 terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 1102 |  5:11:00 PM] -> CONFIRMACIÓN OK: ID 342 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1103 |  5:11:30 PM] -> FIN VOTO: ID 337 terminó de votar en Casilla 5 (Voto emitido por Movimiento Ciudadano)
+[Beat 1104 |  5:12:00 PM] -> FIN VOTO: ID 340 terminó de votar en Casilla 1 (Voto emitido por PAN)
+[Beat 1104 |  5:12:00 PM] -> SPAWN: ID 343 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1105 |  5:12:30 PM] -> SPAWN: ID 344 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1106 |  5:13:00 PM] -> CONFIRMACIÓN OK: ID 343 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1107 |  5:13:30 PM] -> FIN VOTO: ID 338 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 1107 |  5:13:30 PM] -> CONFIRMACIÓN OK: ID 344 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1107 |  5:13:30 PM] -> SPAWN: ID 345 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1108 |  5:14:00 PM] -> FIN VOTO: ID 339 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1108 |  5:14:00 PM] -> SPAWN: ID 346 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 1109 |  5:14:30 PM] -> FIN VOTO: ID 341 terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 1109 |  5:14:30 PM] -> CONFIRMACIÓN OK: ID 345 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1110 |  5:15:00 PM] -> FIN VOTO: ID 342 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 1110 |  5:15:00 PM] -> CONFIRMACIÓN OK: ID 346 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1112 |  5:16:00 PM] -> FIN VOTO: ID 344 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 1112 |  5:16:00 PM] -> SPAWN: ID 347 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1113 |  5:16:30 PM] -> FIN VOTO: ID 343 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1113 |  5:16:30 PM] -> SPAWN: ID 348 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1114 |  5:17:00 PM] -> CONFIRMACIÓN OK: ID 347 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1115 |  5:17:30 PM] -> CONFIRMACIÓN OK: ID 348 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1115 |  5:17:30 PM] -> SPAWN: ID 349 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1116 |  5:18:00 PM] -> FIN VOTO: ID 345 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1116 |  5:18:00 PM] -> SPAWN: ID 350 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1117 |  5:18:30 PM] -> FIN VOTO: ID 346 terminó de votar en Casilla 4 (Voto emitido por PRI)
+[Beat 1117 |  5:18:30 PM] -> CONFIRMACIÓN OK: ID 349 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1117 |  5:18:30 PM] -> SPAWN: ID 351 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1118 |  5:19:00 PM] -> CONFIRMACIÓN OK: ID 350 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1118 |  5:19:00 PM] -> SPAWN: ID 352 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1119 |  5:19:30 PM] -> FIN VOTO: ID 347 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1119 |  5:19:30 PM] -> CONFIRMACIÓN OK: ID 351 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1120 |  5:20:00 PM] -> CONFIRMACIÓN OK: ID 352 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1121 |  5:20:30 PM] -> SPAWN: ID 353 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1122 |  5:21:00 PM] -> FIN VOTO: ID 348 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 1123 |  5:21:30 PM] -> FIN VOTO: ID 349 terminó de votar en Casilla 3 (Voto emitido por Movimiento Ciudadano)
+[Beat 1123 |  5:21:30 PM] -> FIN VOTO: ID 350 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 1123 |  5:21:30 PM] -> CONFIRMACIÓN OK: ID 353 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1123 |  5:21:30 PM] -> SPAWN: ID 354 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1124 |  5:22:00 PM] -> SPAWN: ID 355 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1125 |  5:22:30 PM] -> FIN VOTO: ID 351 terminó de votar en Casilla 1 (Voto emitido por Movimiento Ciudadano)
+[Beat 1125 |  5:22:30 PM] -> CONFIRMACIÓN OK: ID 354 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1125 |  5:22:30 PM] -> SPAWN: ID 356 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 1126 |  5:23:00 PM] -> CONFIRMACIÓN OK: ID 355 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1127 |  5:23:30 PM] -> CONFIRMACIÓN OK: ID 356 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1128 |  5:24:00 PM] -> SPAWN: ID 357 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1129 |  5:24:30 PM] -> FIN VOTO: ID 352 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 1130 |  5:25:00 PM] -> FIN VOTO: ID 353 terminó de votar en Casilla 2 (Voto emitido por PRI)
+[Beat 1130 |  5:25:00 PM] -> CONFIRMACIÓN OK: ID 357 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1130 |  5:25:00 PM] -> SPAWN: ID 358 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1131 |  5:25:30 PM] -> FIN VOTO: ID 355 terminó de votar en Casilla 3 (Voto emitido por Otros)
+[Beat 1131 |  5:25:30 PM] -> SPAWN: ID 359 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1132 |  5:26:00 PM] -> FIN VOTO: ID 354 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1132 |  5:26:00 PM] -> CONFIRMACIÓN OK: ID 358 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1132 |  5:26:00 PM] -> SPAWN: ID 360 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1133 |  5:26:30 PM] -> CONFIRMACIÓN OK: ID 359 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1134 |  5:27:00 PM] -> FIN VOTO: ID 356 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 1134 |  5:27:00 PM] -> CONFIRMACIÓN OK: ID 360 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1134 |  5:27:00 PM] -> SPAWN: ID 361 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1136 |  5:28:00 PM] -> FIN VOTO: ID 357 terminó de votar en Casilla 2 (Voto emitido por Movimiento Ciudadano)
+[Beat 1136 |  5:28:00 PM] -> CONFIRMACIÓN OK: ID 361 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1138 |  5:29:00 PM] -> FIN VOTO: ID 360 terminó de votar en Casilla 4 (Voto emitido por Otros)
+[Beat 1139 |  5:29:30 PM] -> FIN VOTO: ID 358 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1140 |  5:30:00 PM] -> FIN VOTO: ID 359 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1140 |  5:30:00 PM] -> SPAWN: ID 362 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1141 |  5:30:30 PM] -> FIN VOTO: ID 361 terminó de votar en Casilla 2 (Voto emitido por Otros)
+[Beat 1141 |  5:30:30 PM] -> SPAWN: ID 363 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1142 |  5:31:00 PM] -> CONFIRMACIÓN OK: ID 362 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1143 |  5:31:30 PM] -> CONFIRMACIÓN OK: ID 363 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1143 |  5:31:30 PM] -> SPAWN: ID 364 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 1145 |  5:32:30 PM] -> CONFIRMACIÓN OK: ID 364 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1145 |  5:32:30 PM] -> SPAWN: ID 365 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1146 |  5:33:00 PM] -> SPAWN: ID 366 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1147 |  5:33:30 PM] -> CONFIRMACIÓN OK: ID 365 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1148 |  5:34:00 PM] -> CONFIRMACIÓN OK: ID 366 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1148 |  5:34:00 PM] -> SPAWN: ID 367 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1149 |  5:34:30 PM] -> FIN VOTO: ID 363 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 1149 |  5:34:30 PM] -> SPAWN: ID 368 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1150 |  5:35:00 PM] -> FIN VOTO: ID 362 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1150 |  5:35:00 PM] -> CONFIRMACIÓN OK: ID 367 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1150 |  5:35:00 PM] -> SPAWN: ID 369 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1151 |  5:35:30 PM] -> CONFIRMACIÓN OK: ID 368 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1151 |  5:35:30 PM] -> SPAWN: ID 370 entra a Cola Prioridad | Prioridad: Embarazo
+[Beat 1152 |  5:36:00 PM] -> FIN VOTO: ID 364 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1152 |  5:36:00 PM] -> CONFIRMACIÓN OK: ID 369 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1153 |  5:36:30 PM] -> CONFIRMACIÓN OK: ID 370 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1153 |  5:36:30 PM] -> SPAWN: ID 371 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1155 |  5:37:30 PM] -> FIN VOTO: ID 366 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 1155 |  5:37:30 PM] -> CONFIRMACIÓN OK: ID 371 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1155 |  5:37:30 PM] -> SPAWN: ID 372 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1156 |  5:38:00 PM] -> FIN VOTO: ID 365 terminó de votar en Casilla 4 (Voto emitido por PAN)
+[Beat 1156 |  5:38:00 PM] -> SPAWN: ID 373 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1157 |  5:38:30 PM] -> FIN VOTO: ID 367 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1157 |  5:38:30 PM] -> CONFIRMACIÓN OK: ID 372 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1158 |  5:39:00 PM] -> CONFIRMACIÓN OK: ID 373 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1158 |  5:39:00 PM] -> SPAWN: ID 374 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1160 |  5:40:00 PM] -> FIN VOTO: ID 370 terminó de votar en Casilla 5 (Voto emitido por PAN)
+[Beat 1160 |  5:40:00 PM] -> CONFIRMACIÓN OK: ID 374 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1160 |  5:40:00 PM] -> SPAWN: ID 375 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1161 |  5:40:30 PM] -> FIN VOTO: ID 368 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1161 |  5:40:30 PM] -> FIN VOTO: ID 369 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1162 |  5:41:00 PM] -> FIN VOTO: ID 371 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 1162 |  5:41:00 PM] -> CONFIRMACIÓN OK: ID 375 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1163 |  5:41:30 PM] -> SPAWN: ID 376 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1164 |  5:42:00 PM] -> FIN VOTO: ID 372 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1165 |  5:42:30 PM] -> RECHAZADO: ID 376 INE inválida en Recipiente 1 -> Se retira sin votar
+[Beat 1166 |  5:43:00 PM] -> FIN VOTO: ID 375 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1166 |  5:43:00 PM] -> FIN VOTO: ID 373 terminó de votar en Casilla 5 (Voto emitido por Movimiento Ciudadano)
+[Beat 1167 |  5:43:30 PM] -> FIN VOTO: ID 374 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 1167 |  5:43:30 PM] -> SPAWN: ID 377 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1168 |  5:44:00 PM] -> SPAWN: ID 378 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1169 |  5:44:30 PM] -> CONFIRMACIÓN OK: ID 377 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1169 |  5:44:30 PM] -> SPAWN: ID 379 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1170 |  5:45:00 PM] -> CONFIRMACIÓN OK: ID 378 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1170 |  5:45:00 PM] -> SPAWN: ID 380 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1171 |  5:45:30 PM] -> CONFIRMACIÓN OK: ID 379 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1172 |  5:46:00 PM] -> CONFIRMACIÓN OK: ID 380 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1173 |  5:46:30 PM] -> SPAWN: ID 381 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1174 |  5:47:00 PM] -> FIN VOTO: ID 377 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1174 |  5:47:00 PM] -> SPAWN: ID 382 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1175 |  5:47:30 PM] -> CONFIRMACIÓN OK: ID 381 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1176 |  5:48:00 PM] -> CONFIRMACIÓN OK: ID 382 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1177 |  5:48:30 PM] -> FIN VOTO: ID 378 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1177 |  5:48:30 PM] -> SPAWN: ID 383 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1178 |  5:49:00 PM] -> FIN VOTO: ID 379 terminó de votar en Casilla 3 (Voto emitido por Morena)
+[Beat 1179 |  5:49:30 PM] -> CONFIRMACIÓN OK: ID 383 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1180 |  5:50:00 PM] -> FIN VOTO: ID 381 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1180 |  5:50:00 PM] -> FIN VOTO: ID 380 terminó de votar en Casilla 4 (Voto emitido por Morena)
+[Beat 1180 |  5:50:00 PM] -> SPAWN: ID 384 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1181 |  5:50:30 PM] -> FIN VOTO: ID 382 terminó de votar en Casilla 5 (Voto emitido por Morena)
+[Beat 1182 |  5:51:00 PM] -> CONFIRMACIÓN OK: ID 384 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1182 |  5:51:00 PM] -> SPAWN: ID 385 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1184 |  5:52:00 PM] -> CONFIRMACIÓN OK: ID 385 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1185 |  5:52:30 PM] -> SPAWN: ID 386 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1186 |  5:53:00 PM] -> FIN VOTO: ID 383 terminó de votar en Casilla 2 (Voto emitido por Morena)
+[Beat 1187 |  5:53:30 PM] -> FIN VOTO: ID 384 terminó de votar en Casilla 1 (Voto emitido por Otros)
+[Beat 1187 |  5:53:30 PM] -> CONFIRMACIÓN OK: ID 386 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1189 |  5:54:30 PM] -> SPAWN: ID 387 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1191 |  5:55:30 PM] -> FIN VOTO: ID 385 terminó de votar en Casilla 3 (Voto emitido por Movimiento Ciudadano)
+[Beat 1191 |  5:55:30 PM] -> CONFIRMACIÓN OK: ID 387 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1191 |  5:55:30 PM] -> SPAWN: ID 388 entra a Cola Prioridad | Prioridad: Discapacidad
+[Beat 1193 |  5:56:30 PM] -> FIN VOTO: ID 386 terminó de votar en Casilla 1 (Voto emitido por Morena)
+[Beat 1193 |  5:56:30 PM] -> CONFIRMACIÓN OK: ID 388 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1193 |  5:56:30 PM] -> SPAWN: ID 389 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1194 |  5:57:00 PM] -> SPAWN: ID 390 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1195 |  5:57:30 PM] -> CONFIRMACIÓN OK: ID 389 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1195 |  5:57:30 PM] -> SPAWN: ID 391 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1196 |  5:58:00 PM] -> CONFIRMACIÓN OK: ID 390 verificó INE con Recipiente 2 -> Pasa a Queue Votación
+[Beat 1196 |  5:58:00 PM] -> SPAWN: ID 392 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1197 |  5:58:30 PM] -> CONFIRMACIÓN OK: ID 391 verificó INE con Recipiente 1 -> Pasa a Queue Votación
+[Beat 1197 |  5:58:30 PM] -> SPAWN: ID 393 entra a Cola Prioridad | Prioridad: Tercera Edad
+[Beat 1198 |  5:59:00 PM] -> RECHAZADO: ID 392 INE inválida en Recipiente 2 -> Se retira sin votar
+[Beat 1198 |  5:59:00 PM] -> SPAWN: ID 394 entra a Cola Estándar  | Prioridad: Ninguna
+[Beat 1199 |  5:59:30 PM] -> FIN VOTO: ID 387 terminó de votar en Casilla 2 (Voto emitido por PAN)
+[Beat 1199 |  5:59:30 PM] -> CONFIRMACIÓN OK: ID 393 verificó INE con Recipiente 1 -> Pasa a Queue Votación
