@@ -87,18 +87,15 @@ class AgenteContador:
         self.counter_id = counter_id
 
 queue_ine = []
+queue_ine_prioridad = []
 queue_casilla = []
 
-# ==========================================
-# INICIALIZACIÓN Y SIMULACIÓN
-# ==========================================
-
-# Instancias de prueba
+# INICIALIZACIÓN DE SIMULACIÓN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 recipiente1 = AgenteRecipiente(recipient_id=1)
 recipiente2 = AgenteRecipiente(recipient_id=2)
+recipiente3 = AgenteRecipiente(recipient_id=3)
 
-# Determinar clima por bloque de 1 hora
 clima_por_hora = {}
 for h in range(10):
     clima_por_hora[h] = random.choices(clima_types, weights=clima_weights, k=1)[0]
@@ -108,6 +105,7 @@ beat_logs = []
 current_voter_id = 1
 
 for beat in range(TOTAL_BEATS):
+
     hour_idx = beat // 60
     current_beat_time = START_TIME + timedelta(minutes=beat)
     time_label = current_beat_time.strftime("%I:%M %p").lstrip("0")
@@ -116,7 +114,6 @@ for beat in range(TOTAL_BEATS):
     efecto_clima = clima_effects[clima_actual]
     peso_hora = PROB_HOUR[hour_idx]
 
-    # Probabilidad de spawn por beat
     prob_spawn_beat = (BASE_VOTERS_TARGET * peso_hora * efecto_clima) / 60.0
 
     spawned = random.random() < prob_spawn_beat
