@@ -1,37 +1,21 @@
-# Simulation of a polling station
-# ----------------------------------------
-# We consider that a voter passes through three main stages:
-#
-# 1. Arrival:
-#    Includes the arrival time and the time spent waiting in line.
-#
-# 2. Voting:
-#    Includes ID validation time, ballot receiving time, voting time,
-#    and indelible ink application time.
-#
-# 3. Exit:
-#    Includes the time required for the voter to leave the polling station.
-#
-# *Note that each stage requires calculating its corresponding time.
-
-
-# heapq is used to implement a priority queue that manages
-# all simulation events in chronological order.
 import heapq
 import random
 
 from datetime import datetime, timedelta
 import time
 
-# ---------------------------------------
-# VOTER AGENT
-# ---------------------------------------
-# In the object definition, you can see the time attributes associated with each stage.
+# Datos generales de la simulación
 
 total_turns = 600 # unidades de tiempo (10 horas / 60 minutos)
 turn = 0
 current_time = datetime.strptime("8:00 AM", "%I:%M %p")
 simulation_ended = False
+
+total_voters = 426
+
+event_queue = []
+
+# Datos horas
 
 probability_hour = [0.15,   # 8:00 - 9:00
                     0.175,  # 9:00 - 10:00
@@ -44,9 +28,34 @@ probability_hour = [0.15,   # 8:00 - 9:00
                     0.15,   # 4:00 - 5:00
                     0.175]  # 5:00 - 6:00
 
+# Datos clima
+
+clima_types = [
+    "SUNNY",
+    "CLOUDY",
+    "LIGHT_RAIN",
+    "MODERATE_RAIN"
+]
+
+clima_probabilities = [
+    0.80,
+    0.15,
+    0.045,
+    0.005
+]
+
+clima_effect = {
+    "SUNNY": 0.90,
+    "CLOUDY": 1.10,
+    "LIGHT_RAIN": 0.85,
+    "MODERATE_RAIN": 0.50
+}
+
+# Datos y agente votante
+
 class VoterAgent:
 
-def __init__(self, voter_id):
+    def __init__(self, voter_id):
         self.voter_id = voter_id
         self.arrival_time = 0
         self.check_time = 0
@@ -62,9 +71,9 @@ while simulation_ended == False:
     turn += 1
 
     if turn >= total_turns:
-        while
-        simulation_ended = True
-        print("Simulation ended.")
+        #if event_queue.empty():
+            simulation_ended = True
+            print("Simulation ended.")
 
 
 # ---------------------------------------
