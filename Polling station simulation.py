@@ -1,10 +1,12 @@
 from datetime import datetime, timedelta
+import math
 import random
 
-# PARÁMETROS GENERALES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-BEATS_PER_HOUR = 120  # 2 beats * 60 minutos
-TOTAL_BEATS = 1200  # 10 horas * 120 beats
+# ==============================================================================
+# PARÁMETROS GENERALES
+# ==============================================================================
+BEATS_PER_HOUR = 120  # 1 beat = 30 seg, 120 beats = 1 hora
+TOTAL_BEATS = 1200  # 10 horas * 120 beats (8:00 AM - 6:00 PM)
 
 BASE_VOTERS_TARGET = 450
 START_TIME = datetime.strptime("8:00 AM", "%I:%M %p")
@@ -37,9 +39,9 @@ PARTIDOS = ["Morena", "PAN", "PRI", "Movimiento Ciudadano", "Nulos", "Otros"]
 PARTIDOS_PROBS = [0.4708, 0.1443, 0.1241, 0.0775, 0.0110, 0.1723]
 
 
-# DEFINICIÓN DE AGENTES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
+# ==============================================================================
+# DEFINICIÓN DE AGENTES
+# ==============================================================================
 class AgenteVotante:
 
     def __init__(self, voter_id, spawn_beat, time_str):
@@ -52,17 +54,28 @@ class AgenteVotante:
 
         self.tercera_edad = random.random() < 0.185
         self.discapacidad = random.random() < random.uniform(0.01, 0.02)
+        self.embarazo = (
+            random.random() < random.uniform(0.02, 0.04)
+            if not self.tercera_edad
+            else False
+        )
+        self.es_prioridad = (
+            self.tercera_edad or self.discapacidad or self.embarazo
+        )
 
-        if not self.tercera_edad:
-            self.embarazo = random.random() < random.uniform(0.02, 0.04)
-        else:
-            self.embarazo = False
-
-        # Tiempos en segundos (Distribución triangular)
+        # Tiempos continuos en segundos (Distribución triangular)
         self.t_llegada_seg = round(random.triangular(30, 60, 45), 2)
         self.t_confirmacion_seg = round(random.triangular(30, 45, 37.5), 2)
         self.t_votacion_seg = round(random.triangular(60, 300, 180), 2)
         self.t_retirada_seg = round(random.triangular(60, 120, 90), 2)
+
+    @property
+    def beats_confirmacion(self):
+        return max(1, math.ceil(self.t_confirmacion_seg / 30))
+
+    @property
+    def beats_votacion(self):
+        return max(1, math.ceil(self.t_votacion_seg / 30))
 
     def resumen_prioridades(self):
         prios = []
@@ -79,67 +92,231 @@ class AgenteRecipiente:
 
     def __init__(self, recipient_id):
         self.recipient_id = recipient_id
+        self.current_voter = None
+        self.busy_until_beat = -1
+
+    def is_free(self, current_beat):
+        return current_beat >= self.busy_until_beat
+
+
+class AgenteCasilla:
+
+    def __init__(self, casilla_id):
+        self.casilla_id = casilla_id
+        self.current_voter = None
+        self.busy_until_beat = -1
+
+    def is_free(self, current_beat):
+        return current_beat >= self.busy_until_beat
 
 
 class AgenteContador:
 
-    def __init__(self, counter_id):
+    def __init__(self, counter_id, prob_error=0.001):
         self.counter_id = counter_id
+        self.prob_error = prob_error
+
+    def _aplicar_posible_error(self, valor_real):
+        # 0.1% de probabilidad de error (+1 o -1 con igual probabilidad)
+        if random.random() < self.prob_error:
+            error = random.choice([-1, 1])
+            return max(0, valor_real + error)
+        return valor_real
+
+    def contar(self, lista_votantes, lista_partidos):
+        # 1. Total de personas que llegaron
+        total_personas_real = len(lista_votantes)
+        total_personas_contado = self._aplicar_posible_error(total_personas_real)
+
+        # 2. Total de votos emitidos (INE válida)
+        votos_validos = [v for v in lista_votantes if v.ine_valida]
+        total_votos_real = len(votos_validos)
+        total_votos_contado = self._aplicar_posible_error(total_votos_real)
+
+        # 3. Votos por partido
+        votos_partido_contados = {}
+        for partido in lista_partidos:
+            real_partido = sum(1 for v in votos_validos if v.partido == partido)
+            votos_partido_contados[partido] = self._aplicar_posible_error(real_partido)
+
+        return {
+            "total_personas": total_personas_contado,
+            "total_votos": total_votos_contado,
+            "votos_partido": votos_partido_contados,
+        }
 
 
+# ==============================================================================
+# INICIALIZACIÓN DE LA SIMULACIÓN
+# ==============================================================================
 queue_ine = []
 queue_ine_prioridad = []
 queue_casilla = []
+queue_casilla_prioridad = []
 
-# INICIALIZACIÓN DE SIMULACIÓN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+recipientes = [AgenteRecipiente(i + 1) for i in range(3)]
+casillas = [AgenteCasilla(i + 1) for i in range(5)]
+contadores = [AgenteContador(i + 1) for i in range(3)]
 
-recipiente1 = AgenteRecipiente(recipient_id=1)
-recipiente2 = AgenteRecipiente(recipient_id=2)
-recipiente3 = AgenteRecipiente(recipient_id=3)
-
-clima_por_hora = {}
-
-for h in range(10):
-    clima_por_hora[h] = random.choices(clima_types, weights=clima_weights, k=1)[0]
+clima_por_hora = {
+    h: random.choices(clima_types, weights=clima_weights, k=1)[0]
+    for h in range(10)
+}
 
 voters_spawned = []
-beat_logs = []
 current_voter_id = 1
+next_recipiente_prio = True
+next_casilla_prio = True
 
-for beat in range(TOTAL_BEATS):
 
-    hour_idx = beat // BEATS_PER_HOUR
+def imprimir_estado_colas(beat_actual):
+    tiempo_actual = START_TIME + timedelta(seconds=beat_actual * 30)
+    hora_str = tiempo_actual.strftime("%I:%M %p").lstrip("0")
+    h_idx = beat_actual // BEATS_PER_HOUR
+
+    print("\n" + "-" * 80)
+    print(f">>> [ESTADO HORARIO] Hora {h_idx:02d} | {hora_str} (Beat {beat_actual})")
+    print("-" * 80)
+
+    # Estado de recipientes
+    rec_status = [
+        f"R{r.recipient_id}: [ID {r.current_voter.voter_id if r.current_voter else 'Libre'}]"
+        for r in recipientes
+    ]
+    print(f"  Recipientes (Recepción) : {', '.join(rec_status)}")
+
+    # Estado de casillas
+    cas_status = [
+        f"C{c.casilla_id}: [ID {c.current_voter.voter_id if c.current_voter else 'Libre'}]"
+        for c in casillas
+    ]
+    print(f"  Casillas (Votación)     : {', '.join(cas_status)}")
+
+    # Estado de las 4 colas
+    ids_ine = [v.voter_id for v in queue_ine]
+    ids_ine_prio = [v.voter_id for v in queue_ine_prioridad]
+    ids_casilla = [v.voter_id for v in queue_casilla]
+    ids_casilla_prio = [v.voter_id for v in queue_casilla_prioridad]
+
+    print(f"  Queue INE               ({len(ids_ine):3d}): {ids_ine if ids_ine else 'Vacía'}")
+    print(f"  Queue INE Prioridad     ({len(ids_ine_prio):3d}): {ids_ine_prio if ids_ine_prio else 'Vacía'}")
+    print(f"  Queue Casilla           ({len(ids_casilla):3d}): {ids_casilla if ids_casilla else 'Vacía'}")
+    print(f"  Queue Casilla Prioridad ({len(ids_casilla_prio):3d}): {ids_casilla_prio if ids_casilla_prio else 'Vacía'}")
+    print("-" * 80 + "\n")
+
+
+# ==============================================================================
+# CICLO PRINCIPAL DE SIMULACIÓN (BEATS)
+# ==============================================================================
+beat = 0
+
+print("=" * 80)
+print("              INICIO DE LA SIMULACIÓN (REGISTRO BEAT A BEAT)")
+print("=" * 80)
+
+while (
+    beat < TOTAL_BEATS
+    or len(queue_ine) > 0
+    or len(queue_ine_prioridad) > 0
+    or len(queue_casilla) > 0
+    or len(queue_casilla_prioridad) > 0
+    or any(not r.is_free(beat) for r in recipientes)
+    or any(not c.is_free(beat) for c in casillas)
+):
+    # Snapshot por hora
+    if beat % BEATS_PER_HOUR == 0:
+        imprimir_estado_colas(beat)
+
+    hour_idx = min(beat // BEATS_PER_HOUR, 9)
     current_beat_time = START_TIME + timedelta(seconds=beat * 30)
     time_label = current_beat_time.strftime("%I:%M:%S %p").lstrip("0")
 
-    clima_actual = clima_por_hora[hour_idx]
-    efecto_clima = clima_effects[clima_actual]
-    peso_hora = PROB_HOUR[hour_idx]
+    # 1. FINALIZAR VOTACIONES EN CASILLAS
+    for c in casillas:
+        if c.current_voter and c.busy_until_beat == beat:
+            c.current_voter = None
 
+    # 2. FINALIZAR VERIFICACIONES EN RECIPIENTES Y MOVER A CASILLAS
+    for r in recipientes:
+        if r.current_voter and r.busy_until_beat == beat:
+            voter = r.current_voter
+            if voter.ine_valida:
+                if voter.es_prioridad:
+                    queue_casilla_prioridad.append(voter)
+                else:
+                    queue_casilla.append(voter)
+            r.current_voter = None
 
-    prob_spawn_beat = (BASE_VOTERS_TARGET * peso_hora * efecto_clima) / BEATS_PER_HOUR
-    # best case: 450 * 0.175 * 1.1 / 120 = 0.721875
-    # worst case: 450 * 0.025 * 0.5 / 120 = 0.046875
+    # 3. SPAWN DE NUEVOS VOTANTES (Solo durante los 1200 beats reglamentarios)
+    if beat < TOTAL_BEATS:
+        clima_actual = clima_por_hora[hour_idx]
+        efecto_clima = clima_effects[clima_actual]
+        peso_hora = PROB_HOUR[hour_idx]
 
-    spawned = random.random() < prob_spawn_beat
+        prob_spawn_beat = (
+            BASE_VOTERS_TARGET * peso_hora * efecto_clima
+        ) / BEATS_PER_HOUR
 
-    if spawned:
-        agent = AgenteVotante(current_voter_id, beat, time_label)
-        voters_spawned.append(agent)
-        current_voter_id += 1
-        beat_logs.append((beat, time_label, True, agent))
-    else:
-        beat_logs.append((beat, time_label, False, None))
+        if random.random() < prob_spawn_beat:
+            agent = AgenteVotante(current_voter_id, beat, time_label)
+            voters_spawned.append(agent)
+            current_voter_id += 1
 
+            if agent.es_prioridad:
+                queue_ine_prioridad.append(agent)
+                dest = "Queue INE Prio"
+            else:
+                queue_ine.append(agent)
+                dest = "Queue INE"
 
-# ==========================================
-# REPORTE FINAL
-# ==========================================
+            print(
+                f"[Beat {beat:04d} | {time_label:>11}] -> ¡SPAWN! ID: {agent.voter_id:<3} | "
+                f"Destino: {dest:<14} | Partido: {agent.partido:<20} | INE: {str(agent.ine_valida):<5} | "
+                f"Prioridad: {agent.resumen_prioridades():<20} | Tiempos(s) [Llegada: {agent.t_llegada_seg}, "
+                f"INE: {agent.t_confirmacion_seg}, Voto: {agent.t_votacion_seg}, Salida: {agent.t_retirada_seg}]"
+            )
 
+    # 4. ASIGNACIÓN A RECIPIENTES (Alternancia 1 a 1)
+    for r in recipientes:
+        if r.is_free(beat) and (queue_ine or queue_ine_prioridad):
+            voter_to_serve = None
+            if (next_recipiente_prio and queue_ine_prioridad) or (not queue_ine and queue_ine_prioridad):
+                voter_to_serve = queue_ine_prioridad.pop(0)
+                next_recipiente_prio = False
+            elif queue_ine:
+                voter_to_serve = queue_ine.pop(0)
+                next_recipiente_prio = True
+
+            if voter_to_serve:
+                r.current_voter = voter_to_serve
+                r.busy_until_beat = beat + voter_to_serve.beats_confirmacion
+
+    # 5. ASIGNACIÓN A CASILLAS (Alternancia 1 a 1)
+    for c in casillas:
+        if c.is_free(beat) and (queue_casilla or queue_casilla_prioridad):
+            voter_to_vote = None
+            if (next_casilla_prio and queue_casilla_prioridad) or (not queue_casilla and queue_casilla_prioridad):
+                voter_to_vote = queue_casilla_prioridad.pop(0)
+                next_casilla_prio = False
+            elif queue_casilla:
+                voter_to_vote = queue_casilla.pop(0)
+                next_casilla_prio = True
+
+            if voter_to_vote:
+                c.current_voter = voter_to_vote
+                c.busy_until_beat = beat + voter_to_vote.beats_votacion
+
+    beat += 1
+
+# Snapshot final al concluir toda la jornada extendida
+imprimir_estado_colas(beat)
+
+# ==============================================================================
+# REPORTES FINALES
+# ==============================================================================
 print("=" * 80)
 print("                      REPORTE DE CLIMA POR HORA")
 print("=" * 80)
-
 for h in range(10):
     hora_inicio = (START_TIME + timedelta(hours=h)).strftime("%I:%M %p")
     hora_fin = (START_TIME + timedelta(hours=h + 1)).strftime("%I:%M %p")
@@ -150,28 +327,7 @@ for h in range(10):
         f"Peso Asistencia: {PROB_HOUR[h]*100:.1f}%"
     )
 
-print("\n" + "=" * 80)
-print("          REGISTRO BEAT A BEAT (INTERVALOS DE 30 SEGUNDOS)")
-print("=" * 80)
-
-for beat, time_str, did_spawn, agent in beat_logs:
-    if did_spawn:
-        print(
-            f"[Beat {beat:04d} | {time_str:>11}] -> ¡SPAWN! ID: {agent.voter_id:<3} |"
-            f" Partido: {agent.partido:<20} | INE: {str(agent.ine_valida):<5} |"
-            f" Prioridad: {agent.resumen_prioridades():<20} | Tiempos(s) [Llegada:"
-            f" {agent.t_llegada_seg}, INE: {agent.t_confirmacion_seg}, Voto:"
-            f" {agent.t_votacion_seg}, Salida: {agent.t_retirada_seg}]"
-        )
-    else:
-        print(f"[Beat {beat:04d} | {time_str:>11}] -> Sin generación")
-
-# ----------------------------------------------------
-# DISTRIBUCIÓN HORARIA DE VOTANTES GENERADOS
-# ----------------------------------------------------
 total_spawned_count = len(voters_spawned)
-
-# Conteo por hora según el beat de spawn
 voters_by_hour = [0] * 10
 for agent in voters_spawned:
     hour_index = agent.spawn_beat // BEATS_PER_HOUR
@@ -193,7 +349,8 @@ for h in range(10):
 print("\n" + "=" * 80)
 print("                          MÉTRICAS FINALES")
 print("=" * 80)
-print(f"Total de beats simulados: {TOTAL_BEATS}")
+print(f"Total de beats reglamentarios: {TOTAL_BEATS} (hasta las 6:00 PM)")
+print(f"Total de beats reales corridos: {beat} (finalizó a las {(START_TIME + timedelta(seconds=beat*30)).strftime('%I:%M:%S %p')})")
 print(f"Total de agentes generados: {total_spawned_count}")
 valid_ines = sum(1 for v in voters_spawned if v.ine_valida)
 print(
@@ -201,10 +358,7 @@ print(
     f" ({(valid_ines/total_spawned_count*100) if total_spawned_count else 0:.1f}%)"
 )
 
-# Inicializar conteo en 0 para cada partido
 conteo_votos = {partido: 0 for partido in PARTIDOS}
-
-# Contar únicamente los votos de agentes cuya credencial fue válida
 for agent in voters_spawned:
     if agent.ine_valida:
         conteo_votos[agent.partido] += 1
@@ -212,16 +366,31 @@ for agent in voters_spawned:
 print("\n" + "=" * 80)
 print("                     RESULTADOS DE LA ELECCIÓN")
 print("=" * 80)
-
-# Ordenar los resultados de mayor a menor número de votos
 votos_ordenados = sorted(conteo_votos.items(), key=lambda item: item[1], reverse=True)
 
 for partido, votos in votos_ordenados:
     pct = (votos / valid_ines * 100) if valid_ines > 0 else 0.0
-    barra = "█" * int(pct // 2)  # Barra visual proporcional (máx 50 caracteres)
+    barra = "█" * int(pct // 2)
     print(f"{partido:<22} | {votos:3d} votos ({pct:5.2f}%) | {barra}")
 
 print("-" * 80)
 print(f"Total de votos emitidos (INE válida): {valid_ines}")
 votos_descartados = total_spawned_count - valid_ines
 print(f"Votos no emitidos (INE rechazada)  : {votos_descartados}")
+
+# ==============================================================================
+# CONTEO INDEPENDIENTE DE AGENTES CONTADORES (CON 0.1% PROBABILIDAD DE ERROR)
+# ==============================================================================
+print("\n" + "=" * 80)
+print("               CONTEO INDEPENDIENTE DE LOS AGENTES CONTADORES")
+print("=" * 80)
+
+resultados_contadores = [c.contar(voters_spawned, PARTIDOS) for c in contadores]
+
+for i, res in enumerate(resultados_contadores, start=1):
+    print(f"\n--- Agente Contador #{i} ---")
+    print(f"Total de personas contadas : {res['total_personas']}")
+    print(f"Total de votos contados    : {res['total_votos']}")
+    print("Votos por partido:")
+    for partido in PARTIDOS:
+        print(f"  - {partido:<22}: {res['votos_partido'][partido]:3d} votos")
