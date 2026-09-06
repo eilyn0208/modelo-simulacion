@@ -9,7 +9,6 @@ TOTAL_BEATS = 600  # 10 horas * 60 minutos
 BASE_VOTERS_TARGET = 450
 START_TIME = datetime.strptime("8:00 AM", "%I:%M %p")
 
-# Probabilidad base por hora (8:00 a 17:00)
 PROB_HOUR = [
     0.15,   # 8:00 - 9:00
     0.175,  # 9:00 - 10:00
@@ -23,7 +22,6 @@ PROB_HOUR = [
     0.175   # 5:00 - 6:00
 ]
 
-# Tipo de clima, probabilidad de ocurrencia y efecto multiplicador
 PROB_CLIMA = [
     ["SOLEADO", 0.80, 0.90],
     ["NUBLADO", 0.15, 1.10],
@@ -35,7 +33,6 @@ clima_types = [item[0] for item in PROB_CLIMA]
 clima_weights = [item[1] for item in PROB_CLIMA]
 clima_effects = {item[0]: item[2] for item in PROB_CLIMA}
 
-# Partidos políticos
 PARTIDOS = ["Morena", "PAN", "PRI", "Movimiento Ciudadano", "Nulos", "Otros"]
 PARTIDOS_PROBS = [0.4708, 0.1443, 0.1241, 0.0775, 0.0110, 0.1723]
 
@@ -83,36 +80,23 @@ class AgenteRecipiente:
 
     def __init__(self, recipient_id):
         self.recipient_id = recipient_id
-        self.current_voter = None
-        self.is_busy = False
-        self.time_remaining = 0
 
+class AgenteContador:
 
-# Agentes Dummy
-class AgenteMesaDirectiva:
+    def __init__(self, counter_id):
+        self.counter_id = counter_id
 
-    def __init__(self, agent_id, rol="Presidente"):
-        self.agent_id = agent_id
-        self.rol = rol
-        self.is_busy = False
-        self.current_voter = None
-
-
-class AgenteObservador:
-
-    def __init__(self, observer_id, organizacion="INE"):
-        self.observer_id = observer_id
-        self.organizacion = organizacion
-        self.incidencias_reportadas = 0
-
+queue_ine = []
+queue_casilla = []
 
 # ==========================================
 # INICIALIZACIÓN Y SIMULACIÓN
 # ==========================================
 
 # Instancias de prueba
-mesa_ayudante = AgenteMesaDirectiva(agent_id=1, rol="Secretario")
-observador = AgenteObservador(observer_id=1, organizacion="Observador Ciudadano")
+
+recipiente1 = AgenteRecipiente(recipient_id=1)
+recipiente2 = AgenteRecipiente(recipient_id=2)
 
 # Determinar clima por bloque de 1 hora
 clima_por_hora = {}
